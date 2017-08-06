@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _dnscurve_txt_signature_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _dnscurve_txt_signature_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_157324"></a>
+<p> Domain Name System Curve/DNSCurve Signature with Test Strings/TXT Data<br /><br />1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3<br />0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                                                               |<br />|                                                               |<br />|                                                               |<br />|                       Server Public Key                       |<br />|                                                               |<br />|                                                               |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                      Server Magic Number                      |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                            Serial                             |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                    Certificate Time(Begin)                    |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                     Certificate Time(End)                     |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _dnscurve_txt_signature_ </li></ul><p>Artifact : <a href="index.html#ref8_134796"><b>Structure</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_160780"></a>
+<table><tr><td><div class="element">Relation <b>PublicKey (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + PublicKey : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a>, multiplicity : [crypto_box_PUBLICKEYBYTES]</li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> PublicKey[crypto_box_PUBLICKEYBYTES]</li></ul><a name="ref0_160908"></a>
+<table><tr><td><div class="element">Relation <b>MagicNumber (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MagicNumber : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a>, multiplicity : [8U]</li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> MagicNumber[8U]</li></ul><a name="ref0_161036"></a>
+<table><tr><td><div class="element">Relation <b>Serial (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Serial : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> Serial</li></ul><a name="ref0_161164"></a>
+<table><tr><td><div class="element">Relation <b>CertTime_Begin (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + CertTime_Begin : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> CertTime_Begin</li></ul><a name="ref0_161292"></a>
+<table><tr><td><div class="element">Relation <b>CertTime_End (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + CertTime_End : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> CertTime_End</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class bpf_hdr</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class bpf_hdr</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_223116"></a>
+<p>/< thus reach the application.<br />!<br />\brief Packet header.<br /><br />This structure defines the header associated with every packet delivered to the application.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct bpf_hdr </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_219148"></a>
+<table><tr><td><div class="element">Attribute <b>bh_tstamp</b></div></td></tr></table>
+<p>/< The timestamp associated with the captured packet. <br /></p><p>Declaration :</p><ul><li>Uml : + bh_tstamp : timeval</li><li>C++ : public: struct timeval bh_tstamp</li></ul><a name="ref1_219276"></a>
+<table><tr><td><div class="element">Attribute <b>bh_caplen</b></div></td></tr></table>
+<p>/< It is stored in a TimeVal structure.<br />/< Length of captured portion. The captured portion <b>can be different</b><br /></p><p>Declaration :</p><ul><li>Uml : + bh_caplen : UINT</li><li>C++ : public: UINT bh_caplen</li></ul><a name="ref1_219404"></a>
+<table><tr><td><div class="element">Attribute <b>bh_datalen</b></div></td></tr></table>
+<p>/< from the original packet, because it is possible (with a proper filter)<br />/< to instruct the driver to capture only a portion of the packets.<br />/< Original length of packet<br /></p><p>Declaration :</p><ul><li>Uml : + bh_datalen : UINT</li><li>C++ : public: UINT bh_datalen</li></ul><a name="ref1_219532"></a>
+<table><tr><td><div class="element">Attribute <b>bh_hdrlen</b></div></td></tr></table>
+<p>/< Length of bpf header (this struct plus alignment padding). In some cases,<br /></p><p>Declaration :</p><ul><li>Uml : + bh_hdrlen : USHORT</li><li>C++ : public: USHORT bh_hdrlen</li></ul></div>
+</body>
+</html>

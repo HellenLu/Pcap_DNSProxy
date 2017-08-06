@@ -1,0 +1,4 @@
+class DiffernetFileSetIPFilter
+!!!136204.cpp!!!	DiffernetFileSetIPFilter(in  : void)
+	FileIndex = 0;
+	return;

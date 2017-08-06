@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class bpf_program</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class bpf_program</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_146828"></a>
+<p>!<br />\brief A BPF pseudo-assembly program.<br /><br />The program will be injected in the kernel by the PacketSetBPF() function and applied to every incoming packet. <br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct bpf_program </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_217996"></a>
+<table><tr><td><div class="element">Attribute <b>bf_len</b></div></td></tr></table>
+<p>/< Indicates the number of instructions of the program, i.e. the number of struct bpf_insn that will follow.<br /></p><p>Declaration :</p><ul><li>Uml : + bf_len : UINT</li><li>C++ : public: UINT bf_len</li></ul><a name="ref0_192012"></a>
+<table><tr><td><div class="element">Relation <b>bf_insns (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>/< A pointer to the first instruction of the program.<br /></p><p>Declaration :</p><ul><li>Uml : + bf_insns : <a href="class222860.html#ref4_222860"><b>bpf_insn</b></a></li><li>C++ : public: struct <a href="class222860.html#ref4_222860"><b>bpf_insn</b></a> * bf_insns</li></ul></div>
+</body>
+</html>

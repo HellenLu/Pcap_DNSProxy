@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+
+<head>
+<title>U</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">U</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<table>
+<tr bgcolor="#f0f0f0"><td align="center"><b>Name</b></td><td align="center"><b>Kind</b></td><td align="center"><b>Description</b></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_216844" target = "projectFrame"><b>u</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_191884" target = "projectFrame"><b>u</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_217356" target = "projectFrame"><b>u</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_210572" target = "projectFrame"><b>u</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_221964" target = "projectFrame"><b>u_int16_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_222092" target = "projectFrame"><b>u_int32_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_222220" target = "projectFrame"><b>u_int64_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_221836" target = "projectFrame"><b>u_int8_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_143628" target = "projectFrame"><b>UDP</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_145676" target = "projectFrame"><b>UDP</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_144396" target = "projectFrame"><b>UDP</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_146956" target = "projectFrame"><b>UDP_BLOCK_RESET</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_150924" target = "projectFrame"><b>udp_hdr</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_149516" target = "projectFrame"><b>UDP_NORMAL</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_149644" target = "projectFrame"><b>UDP_WITHOUT_MARKING</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_156940" target = "projectFrame"><b>UDPPayloadSize</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_197004" target = "projectFrame"><b>UI</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref8_143372" target = "projectFrame"><b>ui</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_197132" target = "projectFrame"><b>UI_METHOD</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_210956" target = "projectFrame"><b>UI_STRING</b></a></td><td>class</td><td> ---------- For method writers ---------- <br />-<br />A method contains a number of functions that implement the low level<br />of the User Interface.  The functions are:<br /><br />an opener       This function starts a session, maybe by opening<br />a channel to a tty, or by opening a window.<br />a writer        This function is called to write a given string,<br />maybe to the tty, maybe as a field label in a<br />window.<br />a flusher       This function is called to flush everything that<br />has been output so far.  It can be used to actually<br />display a dialog box after it has been built.<br />a reader        This function is called to read a given prompt,<br />maybe from the tty, maybe from a field in a<br />window.  Note that it's called with all string<br />structures, not only the prompt ones, so it must<br />check such things itself.<br />a closer        This function closes the session, maybe by closing<br />the channel to the tty, or closing the window.<br /><br />All these functions are expected to return:<br /><br />0       on error.<br />1       on success.<br />-1      on out-of-band events, for example if some prompting has<br />been canceled (by pressing Ctrl-C, for example).  This is<br />only checked when returned by the flusher or the reader.<br /><br />The way this is used, the opener is first called, then the writer for all<br />strings, then the flusher, then the reader for all strings and finally the<br />closer.  Note that if you want to prompt from a terminal or other command<br />line interface, the best is to have the reader also write the prompts<br />instead of having the writer do it.  If you want to prompt from a dialog<br />box, the writer can be used to build up the contents of the box, and the<br />flusher to actually display the box and run the event loop until all data<br />has been given, after which the reader only grabs the given data and puts<br />them back into the UI strings.<br /><br />All method functions take a UI as argument.  Additionally, the writer and<br />the reader take a UI_STRING.<br /><br /><br />The UI_STRING type is the data structure that contains all the needed info<br />about a string or a prompt, including test data for a verification prompt.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_142732" target = "projectFrame"><b>uint16_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_140300" target = "projectFrame"><b>uint32_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_141196" target = "projectFrame"><b>uint64_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_140428" target = "projectFrame"><b>uint8_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_224524" target = "projectFrame"><b>uintptr_t</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_222604" target = "projectFrame"><b>ulBytesReceived</b></a></td><td>attribute</td><td>/&lt; Number of valid bytes present in the buffer, i.e. amount of data</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_172300" target = "projectFrame"><b>umask</b></a></td><td>relation</td><td> Usages present </td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_182156" target = "projectFrame"><b>uniform</b></a></td><td>attribute</td><td> optional, a default implementation will be used if NULL </td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_197004" target = "projectFrame"><b>urb_len</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_171532" target = "projectFrame"><b>usage</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref8_145420" target = "projectFrame"><b>usb</b></a></td><td>artifact</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_190092" target = "projectFrame"><b>user</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_162956" target = "projectFrame"><b>UserID</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_223372" target = "projectFrame"><b>username</b></a></td><td>attribute</td><td>!<br />\brief Zero-terminated string containing the username that has to be <br />used on the remote machine for authentication.<br /><br />This field is meaningless in case of the RPCAP_RMTAUTH_NULL authentication<br />and it can be NULL.<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_219020" target = "projectFrame"><b>USERNOTICE</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref4_218892" target = "projectFrame"><b>USERNOTICE_st</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_214028" target = "projectFrame"><b>usr_data</b></a></td><td>attribute</td><td> Any extension specific data </td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_216588" target = "projectFrame"><b>usr_data</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_187660" target = "projectFrame"><b>utype</b></a></td><td>attribute</td><td> underlying type </td></tr>
+</table>
+</body>
+</html>

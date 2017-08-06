@@ -1,0 +1,4 @@
+class AddressRoutingTable
+!!!135948.cpp!!!	AddressRoutingTable(in  : void)
+	Prefix = 0;
+	return;

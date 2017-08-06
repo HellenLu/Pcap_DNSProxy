@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pcap_pkthdr</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pcap_pkthdr</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_226828"></a>
+<p>Generic per-packet information, as supplied by libpcap.<br /><br />The time stamp can and should be a "struct timeval", regardless of<br />whether your system supports 32-bit tv_sec in "struct timeval",<br />64-bit tv_sec in "struct timeval", or both if it supports both 32-bit<br />and 64-bit applications.  The on-disk format of savefiles uses 32-bit<br />tv_sec (and tv_usec); this structure is irrelevant to that.  32-bit<br />and 64-bit versions of libpcap, even if they're on the same platform,<br />should supply the appropriate version of "struct timeval", even if<br />that's not what the underlying packet capture mechanism supplies.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pcap_pkthdr </li></ul><p>Artifact : <a href="index.html#ref8_145164"><b>pcap</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_225420"></a>
+<table><tr><td><div class="element">Attribute <b>ts</b></div></td></tr></table>
+<p> time stamp <br /></p><p>Declaration :</p><ul><li>Uml : + ts : timeval</li><li>C++ : public: struct timeval ts</li></ul><a name="ref0_193804"></a>
+<table><tr><td><div class="element">Relation <b>caplen (&lt;directional composition&gt;)</b></div></td></tr></table><p> length of portion present <br /></p><p>Declaration :</p><ul><li>Uml : + caplen : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> caplen</li></ul><a name="ref0_193932"></a>
+<table><tr><td><div class="element">Relation <b>len (&lt;directional composition&gt;)</b></div></td></tr></table><p> length this packet (off wire) <br /></p><p>Declaration :</p><ul><li>Uml : + len : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> len</li></ul></div>
+</body>
+</html>

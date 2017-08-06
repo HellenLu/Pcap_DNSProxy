@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class X509_LOOKUP_TYPE</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class X509_LOOKUP_TYPE</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_213772"></a>
+<p>-<br />SSL_CTX -> X509_STORE<br />-> X509_LOOKUP<br />->X509_LOOKUP_METHOD<br />-> X509_LOOKUP<br />->X509_LOOKUP_METHOD<br /><br />SSL     -> X509_STORE_CTX<br />->X509_STORE<br /><br />The X509_STORE holds the tables etc for verification stuff.<br />A X509_STORE_CTX is used while validating a single certificate.<br />The X509_STORE has X509_LOOKUPs for looking up certs.<br />The X509_STORE then calls a function to actually verify the<br />certificate chain.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : enum X509_LOOKUP_TYPE </li></ul><p>Artifact : <a href="index.html#ref8_143756"><b>x509_vfy</b></a></p>
+<p>Stereotype: enum</p>
+<div class="sub">
+<p>Items :</p><ul>
+<li>X509_LU_NONE</li>
+<li>X509_LU_X509</li>
+<li>X509_LU_CRL</li>
+</ul>
+</div>
+</body>
+</html>

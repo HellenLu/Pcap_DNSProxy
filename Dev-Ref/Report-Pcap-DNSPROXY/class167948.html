@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ASN1_TEMPLATE_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ASN1_TEMPLATE_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_167948"></a>
+<p>This is the ASN1 template structure that defines a wrapper round the<br />actual type. It determines the actual position of the field in the value<br />structure, various flags such as OPTIONAL and the field name.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct ASN1_TEMPLATE_st </li></ul><p>Artifact : <a href="index.html#ref8_137484"><b>asn1t</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_185996"></a>
+<table><tr><td><div class="element">Attribute <b>flags</b></div></td></tr></table>
+<p> Various flags <br /></p><p>Declaration :</p><ul><li>Uml : + flags : ulong</li><li>C++ : public: unsigned long flags</li></ul><a name="ref1_186124"></a>
+<table><tr><td><div class="element">Attribute <b>tag</b></div></td></tr></table>
+<p> tag, not used if no tagging <br /></p><p>Declaration :</p><ul><li>Uml : + tag : long</li><li>C++ : public: long tag</li></ul><a name="ref1_186252"></a>
+<table><tr><td><div class="element">Attribute <b>offset</b></div></td></tr></table>
+<p> Offset of this field in structure <br /></p><p>Declaration :</p><ul><li>Uml : + offset : ulong</li><li>C++ : public: unsigned long offset</li></ul><a name="ref1_186380"></a>
+<table><tr><td><div class="element">Attribute <b>field_name</b></div></td></tr></table>
+<p> Field name <br /></p><p>Declaration :</p><ul><li>Uml : + field_name : char, read only</li><li>C++ : public: const char * field_name</li></ul><a name="ref0_172812"></a>
+<table><tr><td><div class="element">Relation <b>item (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> Relevant ASN1_ITEM or ASN1_ADB <br /></p><p>Declaration :</p><ul><li>Uml : + item : <a href="class167820.html#ref4_167820"><b>ASN1_ITEM_EXP</b></a></li><li>C++ : public: <a href="class167820.html#ref4_167820"><b>ASN1_ITEM_EXP</b></a> * item</li></ul></div>
+</body>
+</html>

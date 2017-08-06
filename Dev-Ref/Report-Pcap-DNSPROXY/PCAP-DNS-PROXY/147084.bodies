@@ -1,0 +1,11 @@
+class OutputPacketTable
+!!!136844.cpp!!!	OutputPacketTable(in  : void)
+//Initialization
+	memset(&SocketData_Input, 0, sizeof(SocketData_Input));
+	SocketData_Input.Socket = INVALID_SOCKET;
+	Protocol_Network = 0;
+	Protocol_Transport = 0;
+	ClearPortTime = 0;
+	ReceiveIndex = 0;
+
+	return;

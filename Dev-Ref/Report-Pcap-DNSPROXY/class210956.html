@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class UI_STRING</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class UI_STRING</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_210956"></a>
+<p> ---------- For method writers ---------- <br />-<br />A method contains a number of functions that implement the low level<br />of the User Interface.  The functions are:<br /><br />an opener       This function starts a session, maybe by opening<br />a channel to a tty, or by opening a window.<br />a writer        This function is called to write a given string,<br />maybe to the tty, maybe as a field label in a<br />window.<br />a flusher       This function is called to flush everything that<br />has been output so far.  It can be used to actually<br />display a dialog box after it has been built.<br />a reader        This function is called to read a given prompt,<br />maybe from the tty, maybe from a field in a<br />window.  Note that it's called with all string<br />structures, not only the prompt ones, so it must<br />check such things itself.<br />a closer        This function closes the session, maybe by closing<br />the channel to the tty, or closing the window.<br /><br />All these functions are expected to return:<br /><br />0       on error.<br />1       on success.<br />-1      on out-of-band events, for example if some prompting has<br />been canceled (by pressing Ctrl-C, for example).  This is<br />only checked when returned by the flusher or the reader.<br /><br />The way this is used, the opener is first called, then the writer for all<br />strings, then the flusher, then the reader for all strings and finally the<br />closer.  Note that if you want to prompt from a terminal or other command<br />line interface, the best is to have the reader also write the prompts<br />instead of having the writer do it.  If you want to prompt from a dialog<br />box, the writer can be used to build up the contents of the box, and the<br />flusher to actually display the box and run the event loop until all data<br />has been given, after which the reader only grabs the given data and puts<br />them back into the UI strings.<br /><br />All method functions take a UI as argument.  Additionally, the writer and<br />the reader take a UI_STRING.<br /><br /><br />The UI_STRING type is the data structure that contains all the needed info<br />about a string or a prompt, including test data for a verification prompt.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef struct ui_string_st UI_STRING; </li></ul><p>Artifact : <a href="index.html#ref8_143372"><b>ui</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

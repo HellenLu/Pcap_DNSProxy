@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pcap_rmtauth</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pcap_rmtauth</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_224780"></a>
+<p>!<br />\}<br /><br />!<br /><br />\brief This structure keeps the information needed to autheticate<br />the user on a remote machine.<br /><br />The remote machine can either grant or refuse the access according <br />to the information provided.<br />In case the NULL authentication is required, both 'username' and<br />'password' can be NULL pointers.<br /><br />This structure is meaningless if the source is not a remote interface;<br />in that case, the functions which requires such a structure can accept<br />a NULL pointer as well.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pcap_rmtauth </li></ul><p>Artifact : <a href="index.html#ref8_144524"><b>remote-ext</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_223244"></a>
+<table><tr><td><div class="element">Attribute <b>type</b></div></td></tr></table>
+<p>!<br />\brief Type of the authentication required.<br /><br />In order to provide maximum flexibility, we can support different types<br />of authentication based on the value of this 'type' variable. The currently <br />supported authentication methods are defined into the<br />\link remote_auth_methods Remote Authentication Methods Section\endlink.<br /><br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + type : int</li><li>C++ : public: int type</li></ul><a name="ref1_223372"></a>
+<table><tr><td><div class="element">Attribute <b>username</b></div></td></tr></table>
+<p>!<br />\brief Zero-terminated string containing the username that has to be <br />used on the remote machine for authentication.<br /><br />This field is meaningless in case of the RPCAP_RMTAUTH_NULL authentication<br />and it can be NULL.<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + username : char</li><li>C++ : public: char * username</li></ul><a name="ref1_223500"></a>
+<table><tr><td><div class="element">Attribute <b>password</b></div></td></tr></table>
+<p>!<br />\brief Zero-terminated string containing the password that has to be <br />used on the remote machine for authentication.<br /><br />This field is meaningless in case of the RPCAP_RMTAUTH_NULL authentication<br />and it can be NULL.<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + password : char</li><li>C++ : public: char * password</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pkcs7_signer_info_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pkcs7_signer_info_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_201484"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct pkcs7_signer_info_st </li></ul><p>Artifact : <a href="index.html#ref8_141452"><b>pkcs7</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_181132"></a>
+<table><tr><td><div class="element">Relation <b>version (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> version 1 <br /></p><p>Declaration :</p><ul><li>Uml : + version : <a href="class188812.html#ref4_188812"><b>ASN1_INTEGER</b></a></li><li>C++ : public: <a href="class188812.html#ref4_188812"><b>ASN1_INTEGER</b></a> * version</li></ul><a name="ref0_181260"></a>
+<table><tr><td><div class="element">Relation <b>issuer_and_serial (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + issuer_and_serial : <a href="class201356.html#ref4_201356"><b>PKCS7_ISSUER_AND_SERIAL</b></a></li><li>C++ : public: <a href="class201356.html#ref4_201356"><b>PKCS7_ISSUER_AND_SERIAL</b></a> * issuer_and_serial</li></ul><a name="ref0_181388"></a>
+<table><tr><td><div class="element">Relation <b>digest_alg (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + digest_alg : <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a></li><li>C++ : public: <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a> * digest_alg</li></ul><a name="ref0_181516"></a>
+<table><tr><td><div class="element">Relation <b>digest_enc_alg (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> [ 0 ] <br /><br /></p><p>Declaration :</p><ul><li>Uml : + digest_enc_alg : <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a></li><li>C++ : public: <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a> * digest_enc_alg</li></ul><a name="ref0_181644"></a>
+<table><tr><td><div class="element">Relation <b>enc_digest (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + enc_digest : <a href="class189196.html#ref4_189196"><b>ASN1_OCTET_STRING</b></a></li><li>C++ : public: <a href="class189196.html#ref4_189196"><b>ASN1_OCTET_STRING</b></a> * enc_digest</li></ul><a name="ref0_181772"></a>
+<table><tr><td><div class="element">Relation <b>pkey (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> [ 1 ] <br /> The private key to sign with <br /><br /></p><p>Declaration :</p><ul><li>Uml : + pkey : <a href="class165260.html#ref4_165260"><b>EVP_PKEY</b></a></li><li>C++ : public: <a href="class165260.html#ref4_165260"><b>EVP_PKEY</b></a> * pkey</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+window_sizes 1200 648 300 894 532 64
+cleanlooks_style
+show_stereotypes
+marked
+  classrelation_ref 147340 // <directional composition>
+  classrelation_ref 148364 // <directional composition>
+  class_ref 228108 // anonymous2
+  attribute_ref 230028 // SSL_CT_VALIDATION_PERMISSIVE
+  attribute_ref 230156 // SSL_CT_VALIDATION_STRICT
+end
+selected 
+  package_ref 129 // PCAP-DNS-PROXY
+open
+  class_ref 134540 // _label_hosts_type_
+  class_ref 134668 // LABEL_HOSTS_TYPE
+  class_ref 134796 // _address_compare_type_
+  class_ref 150028 // _icmp_hdr_
+  class_ref 150284 // _icmpv6_hdr_
+  classview_ref 134668 // openssl
+  
+  package_ref 135564 // internal
+  
+  package_ref 135180 // pcap
+  
+  package_ref 135308 // LibSodium
+end
+end
+verbose

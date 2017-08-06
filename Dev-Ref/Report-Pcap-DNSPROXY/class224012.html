@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _PACKET</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _PACKET</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_224012"></a>
+<p>!<br />\brief Structure that contains a group of packets coming from the driver.<br /><br />This structure defines the header associated with every packet delivered to the application.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _PACKET </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_222092"></a>
+<table><tr><td><div class="element">Attribute <b>hEvent</b></div></td></tr></table>
+<p>/< \deprecated Still present for compatibility with old applications.<br /></p><p>Declaration :</p><ul><li>Uml : + hEvent : HANDLE</li><li>C++ : public: HANDLE hEvent</li></ul><a name="ref1_222220"></a>
+<table><tr><td><div class="element">Attribute <b>OverLapped</b></div></td></tr></table>
+<p>/< \deprecated Still present for compatibility with old applications.<br /></p><p>Declaration :</p><ul><li>Uml : + OverLapped : OVERLAPPED</li><li>C++ : public: OVERLAPPED OverLapped</li></ul><a name="ref1_222348"></a>
+<table><tr><td><div class="element">Attribute <b>Buffer</b></div></td></tr></table>
+<p>/< Buffer with containing the packets. See the PacketReceivePacket() for<br /></p><p>Declaration :</p><ul><li>Uml : + Buffer : PVOID</li><li>C++ : public: PVOID Buffer</li></ul><a name="ref1_222476"></a>
+<table><tr><td><div class="element">Attribute <b>Length</b></div></td></tr></table>
+<p>/< details about the organization of the data in this buffer<br />/< Length of the buffer<br /></p><p>Declaration :</p><ul><li>Uml : + Length : UINT</li><li>C++ : public: UINT Length</li></ul><a name="ref1_222604"></a>
+<table><tr><td><div class="element">Attribute <b>ulBytesReceived</b></div></td></tr></table>
+<p>/< Number of valid bytes present in the buffer, i.e. amount of data<br /></p><p>Declaration :</p><ul><li>Uml : + ulBytesReceived : DWORD</li><li>C++ : public: DWORD ulBytesReceived</li></ul><a name="ref1_222732"></a>
+<table><tr><td><div class="element">Attribute <b>bIoComplete</b></div></td></tr></table>
+<p>/< received by the last call to PacketReceivePacket()<br />/< \deprecated Still present for compatibility with old applications.<br /></p><p>Declaration :</p><ul><li>Uml : + bIoComplete : BOOLEAN</li><li>C++ : public: BOOLEAN bIoComplete</li></ul></div>
+</body>
+</html>

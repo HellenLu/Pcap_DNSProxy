@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pkcs7_enc_content_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pkcs7_enc_content_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_201740"></a>
+<p>The above structure is very very similar to PKCS7_SIGN_ENVELOPE. How about<br />merging the two<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pkcs7_enc_content_st </li></ul><p>Artifact : <a href="index.html#ref8_141452"><b>pkcs7</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_181900"></a>
+<table><tr><td><div class="element">Relation <b>content_type (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + content_type : <a href="class191116.html#ref4_191116"><b>ASN1_OBJECT</b></a></li><li>C++ : public: <a href="class191116.html#ref4_191116"><b>ASN1_OBJECT</b></a> * content_type</li></ul><a name="ref0_182028"></a>
+<table><tr><td><div class="element">Relation <b>algorithm (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + algorithm : <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a></li><li>C++ : public: <a href="class194828.html#ref4_194828"><b>X509_ALGOR</b></a> * algorithm</li></ul><a name="ref0_182156"></a>
+<table><tr><td><div class="element">Relation <b>enc_data (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> [ 0 ] <br /></p><p>Declaration :</p><ul><li>Uml : + enc_data : <a href="class189196.html#ref4_189196"><b>ASN1_OCTET_STRING</b></a></li><li>C++ : public: <a href="class189196.html#ref4_189196"><b>ASN1_OCTET_STRING</b></a> * enc_data</li></ul><a name="ref0_182284"></a>
+<table><tr><td><div class="element">Relation <b>cipher (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + cipher : <a href="class183436.html#ref4_183436"><b>EVP_CIPHER</b></a>, read only</li><li>C++ : public: const <a href="class183436.html#ref4_183436"><b>EVP_CIPHER</b></a> * cipher</li></ul></div>
+</body>
+</html>

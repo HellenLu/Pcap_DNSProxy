@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _dns_packet_data_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _dns_packet_data_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_142604"></a>
+<p>DNS Packet Data structure<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _dns_packet_data_ </li></ul><p>Artifact : <a href="index.html#ref8_134668"><b>Definition</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_135436"></a>
+<table><tr><td><div class="element">Relation <b>Buffer (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Packet structure block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Buffer : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * Buffer</li></ul><a name="ref1_153740"></a>
+<table><tr><td><div class="element">Attribute <b>Question</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Question : size_t</li><li>C++ : public: size_t Question</li></ul><a name="ref1_153868"></a>
+<table><tr><td><div class="element">Attribute <b>Answer</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Answer : size_t</li><li>C++ : public: size_t Answer</li></ul><a name="ref1_153996"></a>
+<table><tr><td><div class="element">Attribute <b>Authority</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Authority : size_t</li><li>C++ : public: size_t Authority</li></ul><a name="ref1_154124"></a>
+<table><tr><td><div class="element">Attribute <b>Additional</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Additional : size_t</li><li>C++ : public: size_t Additional</li></ul><a name="ref1_154252"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Record</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Record : size_t</li><li>C++ : public: size_t EDNS_Record</li></ul><a name="ref1_154380"></a>
+<table><tr><td><div class="element">Attribute <b>BufferSize</b></div></td></tr></table>
+<p>Packet attributes block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + BufferSize : size_t</li><li>C++ : public: size_t BufferSize</li></ul><a name="ref1_154508"></a>
+<table><tr><td><div class="element">Attribute <b>Length</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Length : size_t</li><li>C++ : public: size_t Length</li></ul><a name="ref1_154636"></a>
+<table><tr><td><div class="element">Attribute <b>LocalTarget</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LocalTarget : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA LocalTarget</li></ul><a name="ref0_135564"></a>
+<table><tr><td><div class="element">Relation <b>Protocol (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Protocol : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> Protocol</li></ul><a name="ref1_154764"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalRequest</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalRequest : bool</li><li>C++ : public: bool IsLocalRequest</li></ul><a name="ref1_154892"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalInBlack</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalInBlack : bool</li><li>C++ : public: bool IsLocalInBlack</li></ul><a name="ref1_155020"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalInWhite</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalInWhite : bool</li><li>C++ : public: bool IsLocalInWhite</li></ul></div>
+</body>
+</html>

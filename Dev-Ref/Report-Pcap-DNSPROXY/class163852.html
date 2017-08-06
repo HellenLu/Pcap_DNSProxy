@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class randombytes_implementation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class randombytes_implementation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_163852"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct randombytes_implementation </li></ul><p>Artifact : <a href="index.html#ref8_136332"><b>randombytes</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_181772"></a>
+<table><tr><td><div class="element">Attribute <b>implementation_name</b></div></td></tr></table>
+<p> required <br /></p><p>Declaration :</p><ul><li>Uml : + implementation_name : char *(*)(void), read only</li><li>C++ : public: const   char *(*implementation_name)(void)</li></ul><a name="ref1_181900"></a>
+<table><tr><td><div class="element">Attribute <b>random</b></div></td></tr></table>
+<p> required <br /></p><p>Declaration :</p><ul><li>Uml : + random : // required uint32_t (*)(void)</li><li>C++ : public:  // required  uint32_t    (*random)(void)</li></ul><a name="ref1_182028"></a>
+<table><tr><td><div class="element">Attribute <b>stir</b></div></td></tr></table>
+<p> optional <br /></p><p>Declaration :</p><ul><li>Uml : + stir : // optional void (*)(void)</li><li>C++ : public:  // optional  void        (*stir)(void)</li></ul><a name="ref1_182156"></a>
+<table><tr><td><div class="element">Attribute <b>uniform</b></div></td></tr></table>
+<p> optional, a default implementation will be used if NULL <br /></p><p>Declaration :</p><ul><li>Uml : + uniform : // optional, a default implementation will be used if NULL uint32_t (*)(const uint32_t upper_bound)</li><li>C++ : public:  // optional, a default implementation will be used if NULL  uint32_t    (*uniform)(const uint32_t upper_bound)</li></ul><a name="ref1_182284"></a>
+<table><tr><td><div class="element">Attribute <b>buf</b></div></td></tr></table>
+<p> required <br /></p><p>Declaration :</p><ul><li>Uml : + buf : // required void (*)(void * const buf, const size_t size)</li><li>C++ : public:  // required  void        (*buf)(void * const buf, const size_t size)</li></ul><a name="ref1_182412"></a>
+<table><tr><td><div class="element">Attribute <b>close</b></div></td></tr></table>
+<p> optional <br /></p><p>Declaration :</p><ul><li>Uml : + close : // optional int (*)(void)</li><li>C++ : public:  // optional  int         (*close)(void)</li></ul></div>
+</body>
+</html>

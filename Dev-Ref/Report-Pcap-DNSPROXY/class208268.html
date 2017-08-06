@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GEN_SESSION_CB</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GEN_SESSION_CB</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_208268"></a>
+<p>This callback type is used inside SSL_CTX, SSL, and in the functions that<br />set them. It is used to override the generation of SSL/TLS session IDs in<br />a server. Return value should be zero on an error, non-zero to proceed.<br />Also, callbacks should themselves check if the id they generate is unique<br />otherwise the SSL handshake will fail with an error - callbacks can do<br />this using the 'ssl' value they're passed by;<br />SSL_has_matching_session_id(ssl, id, *id_len) The length value passed in<br />is set at the maximum size the session ID can be. In SSLv3/TLSv1 it is 32<br />bytes. The callback can alter this length to be less if desired. It is<br />also an error for the callback to set the size to zero.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef int(*  GEN_SESSION_CB) (const SSL *ssl, unsigned char *id, unsigned int *id_len); </li></ul><p>Artifact : <a href="index.html#ref8_142732"><b>ssl</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

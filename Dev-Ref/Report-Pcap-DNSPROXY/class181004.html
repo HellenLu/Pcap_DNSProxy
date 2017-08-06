@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ENGINE_CIPHERS_PTR</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ENGINE_CIPHERS_PTR</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_181004"></a>
+<p>-<br />These callback types are for an ENGINE's handler for cipher and digest logic.<br />These handlers have these prototypes;<br />  int foo(ENGINE *e, const EVP_CIPHER **cipher, const int **nids, int nid);<br />  int foo(ENGINE *e, const EVP_MD **digest, const int **nids, int nid);<br />Looking at how to implement these handlers in the case of cipher support, if<br />the framework wants the EVP_CIPHER for 'nid', it will call;<br />  foo(e, &p_evp_cipher, NULL, nid);    (return zero for failure)<br />If the framework wants a list of supported 'nid's, it will call;<br />  foo(e, NULL, &p_nids, 0); (returns number of 'nids' or -1 for error)<br /><br /><br />Returns to a pointer to the array of supported cipher 'nid's. If the<br />second parameter is non-NULL it is set to the size of the returned array.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef int(*  ENGINE_CIPHERS_PTR) (ENGINE *, const EVP_CIPHER **, const int **, int); </li></ul><p>Artifact : <a href="index.html#ref8_139532"><b>engine</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

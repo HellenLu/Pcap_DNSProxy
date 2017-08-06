@@ -1,0 +1,36 @@
+format 213
+"Dependency" // Dependency
+  revision 1
+  modified_by 12 "marchon"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/"
+  cpp_src_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/"
+  package_ref 134796 // OpenSSL
+
+  package_ref 135052 // WinPcap
+
+  package_ref 135308 // LibSodium
+end

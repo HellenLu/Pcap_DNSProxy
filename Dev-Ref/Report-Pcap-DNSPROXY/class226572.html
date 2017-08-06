@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pcap_file_header</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pcap_file_header</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_226572"></a>
+<p>The first record in the file contains saved values for some<br />of the flags used in the printout phases of tcpdump.<br />Many fields here are 32 bit ints so compilers won't insert unwanted<br />padding; these files need to be interchangeable across architectures.<br /><br />Do not change the layout of this structure, in any way (this includes<br />changes that only affect the length of fields in this structure).<br /><br />Also, do not change the interpretation of any of the members of this<br />structure, in any way (this includes using values other than<br />LINKTYPE_ values, as defined in "savefile.c", in the "linktype"<br />field).<br /><br />Instead:<br /><br />	introduce a new structure for the new format, if the layout<br />	of the structure changed;<br /><br />	send mail to "tcpdump-workers@lists.tcpdump.org", requesting<br />	a new magic number for your new capture file format, and, when<br />	you get the new magic number, put it in "savefile.c";<br /><br />	use that magic number for save files with the changed file<br />	header;<br /><br />	make the code in "savefile.c" capable of reading files with<br />	the old file header as well as files with the new file header<br />	(using the magic number to determine the header format).<br /><br />Then supply the changes as a patch at<br /><br />	http://sourceforge.net/projects/libpcap/<br /><br />so that future versions of libpcap and programs that use it (such as<br />tcpdump) will be able to read your new capture file format.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pcap_file_header </li></ul><p>Artifact : <a href="index.html#ref8_145164"><b>pcap</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_193164"></a>
+<table><tr><td><div class="element">Relation <b>magic (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + magic : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> magic</li></ul><a name="ref1_224780"></a>
+<table><tr><td><div class="element">Attribute <b>version_major</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + version_major : u_short</li><li>C++ : public: u_short version_major</li></ul><a name="ref1_224908"></a>
+<table><tr><td><div class="element">Attribute <b>version_minor</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + version_minor : u_short</li><li>C++ : public: u_short version_minor</li></ul><a name="ref0_193292"></a>
+<table><tr><td><div class="element">Relation <b>thiszone (&lt;directional composition&gt;)</b></div></td></tr></table><p> gmt to local correction <br /></p><p>Declaration :</p><ul><li>Uml : + thiszone : <a href="class225420.html#ref4_225420"><b>bpf_int32</b></a></li><li>C++ : public: <a href="class225420.html#ref4_225420"><b>bpf_int32</b></a> thiszone</li></ul><a name="ref0_193420"></a>
+<table><tr><td><div class="element">Relation <b>sigfigs (&lt;directional composition&gt;)</b></div></td></tr></table><p> accuracy of timestamps <br /></p><p>Declaration :</p><ul><li>Uml : + sigfigs : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> sigfigs</li></ul><a name="ref0_193548"></a>
+<table><tr><td><div class="element">Relation <b>snaplen (&lt;directional composition&gt;)</b></div></td></tr></table><p> max length saved portion of each pkt <br /></p><p>Declaration :</p><ul><li>Uml : + snaplen : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> snaplen</li></ul><a name="ref0_193676"></a>
+<table><tr><td><div class="element">Relation <b>linktype (&lt;directional composition&gt;)</b></div></td></tr></table><p> data link type (LINKTYPE_*) <br /></p><p>Declaration :</p><ul><li>Uml : + linktype : <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a></li><li>C++ : public: <a href="class225548.html#ref4_225548"><b>bpf_u_int32</b></a> linktype</li></ul></div>
+</body>
+</html>

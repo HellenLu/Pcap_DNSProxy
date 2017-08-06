@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class dyn_MEM_malloc_fn</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class dyn_MEM_malloc_fn</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_181516"></a>
+<p>When compiling an ENGINE entirely as an external shared library, loadable<br />by the "dynamic" ENGINE, these types are needed. The 'dynamic_fns'<br />structure type provides the calling application's (or library's) error<br />functionality and memory management function pointers to the loaded<br />library. These should be used/set in the loaded library code so that the<br />loading application's 'state' will be used/changed in all operations. The<br />'static_state' pointer allows the loaded library to know if it shares the<br />same static data as the calling application (or library), and thus whether<br />these callbacks need to be set or not.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef void*(*  dyn_MEM_malloc_fn) (size_t, const char *, int); </li></ul><p>Artifact : <a href="index.html#ref8_139532"><b>engine</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

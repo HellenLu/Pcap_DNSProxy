@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DNSCurveConfigurationTable</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DNSCurveConfigurationTable</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_147340"></a>
+<p>DNSCurve Configuration class<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class DNSCurveConfigurationTable </li></ul><p>Artifact : <a href="index.html#ref8_134668"><b>Definition</b></a></p>
+<div class="sub">
+<a name="ref1_175628"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurvePayloadSize</b></div></td></tr></table>
+<p>[DNSCurve] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + DNSCurvePayloadSize : size_t</li><li>C++ : public: size_t DNSCurvePayloadSize</li></ul><a name="ref0_143244"></a>
+<table><tr><td><div class="element">Relation <b>DNSCurveProtocol_Network (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DNSCurveProtocol_Network : <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a></li><li>C++ : public: <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a> DNSCurveProtocol_Network</li></ul><a name="ref0_143372"></a>
+<table><tr><td><div class="element">Relation <b>DNSCurveProtocol_Transport (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DNSCurveProtocol_Transport : <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a></li><li>C++ : public: <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a> DNSCurveProtocol_Transport</li></ul><a name="ref1_175756"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_SocketTimeout_Reliable</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_SocketTimeout_Reliable : DWORD</li><li>C++ : public: DWORD DNSCurve_SocketTimeout_Reliable</li></ul><a name="ref1_175884"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_SocketTimeout_Unreliable</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_SocketTimeout_Unreliable : DWORD</li><li>C++ : public: DWORD DNSCurve_SocketTimeout_Unreliable</li></ul><a name="ref1_176012"></a>
+<table><tr><td><div class="element">Attribute <b>IsEncryption</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsEncryption : bool</li><li>C++ : public: bool IsEncryption</li></ul><a name="ref1_176140"></a>
+<table><tr><td><div class="element">Attribute <b>IsEncryptionOnly</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsEncryptionOnly : bool</li><li>C++ : public: bool IsEncryptionOnly</li></ul><a name="ref1_176268"></a>
+<table><tr><td><div class="element">Attribute <b>IsClientEphemeralKey</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsClientEphemeralKey : bool</li><li>C++ : public: bool IsClientEphemeralKey</li></ul><a name="ref1_176396"></a>
+<table><tr><td><div class="element">Attribute <b>KeyRecheckTime</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + KeyRecheckTime : size_t</li><li>C++ : public: size_t KeyRecheckTime</li></ul><a name="ref1_176524"></a>
+<table><tr><td><div class="element">Attribute <b>DatabaseName</b></div></td></tr></table>
+<p>[DNSCurve Database] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + DatabaseName : std::wstring</li><li>C++ : public: std::wstring * DatabaseName</li></ul><a name="ref1_176652"></a>
+<table><tr><td><div class="element">Attribute <b>MBS_DatabaseName</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + MBS_DatabaseName : std::string</li><li>C++ : public: std::string * MBS_DatabaseName</li></ul><a name="ref1_176780"></a>
+<table><tr><td><div class="element">Attribute <b>Database_Target_Server_Main_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Database_Target_Server_Main_IPv6 : std::string</li><li>C++ : public: std::string * Database_Target_Server_Main_IPv6</li></ul><a name="ref1_176908"></a>
+<table><tr><td><div class="element">Attribute <b>Database_Target_Server_Alternate_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Database_Target_Server_Alternate_IPv6 : std::string</li><li>C++ : public: std::string * Database_Target_Server_Alternate_IPv6</li></ul><a name="ref1_177036"></a>
+<table><tr><td><div class="element">Attribute <b>Database_Target_Server_Main_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Database_Target_Server_Main_IPv4 : std::string</li><li>C++ : public: std::string * Database_Target_Server_Main_IPv4</li></ul><a name="ref1_177164"></a>
+<table><tr><td><div class="element">Attribute <b>Database_Target_Server_Alternate_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Database_Target_Server_Alternate_IPv4 : std::string</li><li>C++ : public: std::string * Database_Target_Server_Alternate_IPv4</li></ul><a name="ref1_177292"></a>
+<table><tr><td><div class="element">Attribute <b>Database_LineData</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Database_LineData : std::vector&lt;std::string&gt;</li><li>C++ : public: std::vector&lt;std::vector&lt;std::string&gt;&gt; * Database_LineData</li></ul><p>Stereotype: std::vector</p>
+<a name="ref0_143500"></a>
+<table><tr><td><div class="element">Relation <b>Client_PublicKey (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>[DNSCurve Addresses] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Client_PublicKey : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * Client_PublicKey</li></ul><a name="ref0_143628"></a>
+<table><tr><td><div class="element">Relation <b>Client_SecretKey (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Client_SecretKey : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * Client_SecretKey</li></ul><a name="ref1_177420"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_Target_Server_Main_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_Target_Server_Main_IPv6 : DNSCURVE_SERVER_DATA</li><li>C++ : public: DNSCURVE_SERVER_DATA DNSCurve_Target_Server_Main_IPv6</li></ul><a name="ref1_177548"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_Target_Server_Alternate_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_Target_Server_Alternate_IPv6 : DNSCURVE_SERVER_DATA</li><li>C++ : public: DNSCURVE_SERVER_DATA DNSCurve_Target_Server_Alternate_IPv6</li></ul><a name="ref1_177676"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_Target_Server_Main_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_Target_Server_Main_IPv4 : DNSCURVE_SERVER_DATA</li><li>C++ : public: DNSCURVE_SERVER_DATA DNSCurve_Target_Server_Main_IPv4</li></ul><a name="ref1_177804"></a>
+<table><tr><td><div class="element">Attribute <b>DNSCurve_Target_Server_Alternate_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSCurve_Target_Server_Alternate_IPv4 : DNSCURVE_SERVER_DATA</li><li>C++ : public: DNSCURVE_SERVER_DATA DNSCurve_Target_Server_Alternate_IPv4</li></ul><a name="ref2_136972"></a>
+<table><tr><td><div class="element">Operation <b>DNSCurveConfigurationTable</b></div></td></tr></table><p>Member functions<br /></p><p>Declaration :</p><ul><li>Uml : + DNSCurveConfigurationTable(in  : void) : </li><li>C++ : public: DNSCurveConfigurationTable(void )</li></ul><a name="ref2_137100"></a>
+<table><tr><td><div class="element">Operation <b>DNSCurveConfigurationTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DNSCurveConfigurationTable(in Reference : <a href="class147340.html#ref4_147340"><b>DNSCurveConfigurationTable</b></a>) : </li><li>C++ : public: DNSCurveConfigurationTable(const <a href="class147340.html#ref4_147340"><b>DNSCurveConfigurationTable</b></a> &amp; Reference)</li></ul><a name="ref2_137228"></a>
+<table><tr><td><div class="element">Operation <b>SetToMonitorItem</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetToMonitorItem(in  : void) : void</li><li>C++ : public: void SetToMonitorItem(void )</li></ul><a name="ref2_137356"></a>
+<table><tr><td><div class="element">Operation <b>MonitorItemToUsing</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MonitorItemToUsing(inout DNSCurveConfigurationParameter : <a href="class147340.html#ref4_147340"><b>DNSCurveConfigurationTable</b></a>) : void</li><li>C++ : public: void MonitorItemToUsing(<a href="class147340.html#ref4_147340"><b>DNSCurveConfigurationTable</b></a> * const DNSCurveConfigurationParameter)</li></ul><a name="ref2_137484"></a>
+<table><tr><td><div class="element">Operation <b>MonitorItemReset</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MonitorItemReset(in  : void) : void</li><li>C++ : public: void MonitorItemReset(void )</li></ul><a name="ref2_137612"></a>
+<table><tr><td><div class="element">Operation <b>~DNSCurveConfigurationTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ~DNSCurveConfigurationTable(in  : void) : </li><li>C++ : public: ~DNSCurveConfigurationTable(void )</li></ul></div>
+<p>All public operations : <a href="class147340.html#ref2_137484"><b>MonitorItemReset</b></a> , <a href="class147340.html#ref2_137356"><b>MonitorItemToUsing</b></a> , <a href="class147340.html#ref2_137228"><b>SetToMonitorItem</b></a> </p>
+</body>
+</html>

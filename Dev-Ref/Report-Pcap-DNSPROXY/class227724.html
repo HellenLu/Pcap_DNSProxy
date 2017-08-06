@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _usb_header</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _usb_header</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_227724"></a>
+<p>Header prepended by linux kernel to each event.<br />Appears at the front of each packet in DLT_USB_LINUX captures.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _usb_header </li></ul><p>Artifact : <a href="index.html#ref8_145420"><b>usb</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_195852"></a>
+<table><tr><td><div class="element">Relation <b>id (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + id : <a href="class222220.html#ref4_222220"><b>u_int64_t</b></a></li><li>C++ : public: <a href="class222220.html#ref4_222220"><b>u_int64_t</b></a> id</li></ul><a name="ref0_195980"></a>
+<table><tr><td><div class="element">Relation <b>event_type (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + event_type : <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a></li><li>C++ : public: <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a> event_type</li></ul><a name="ref0_196108"></a>
+<table><tr><td><div class="element">Relation <b>transfer_type (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + transfer_type : <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a></li><li>C++ : public: <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a> transfer_type</li></ul><a name="ref0_196236"></a>
+<table><tr><td><div class="element">Relation <b>endpoint_number (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + endpoint_number : <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a></li><li>C++ : public: <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a> endpoint_number</li></ul><a name="ref0_196364"></a>
+<table><tr><td><div class="element">Relation <b>device_address (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + device_address : <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a></li><li>C++ : public: <a href="class221836.html#ref4_221836"><b>u_int8_t</b></a> device_address</li></ul><a name="ref0_196492"></a>
+<table><tr><td><div class="element">Relation <b>bus_id (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + bus_id : <a href="class221964.html#ref4_221964"><b>u_int16_t</b></a></li><li>C++ : public: <a href="class221964.html#ref4_221964"><b>u_int16_t</b></a> bus_id</li></ul><a name="ref1_229772"></a>
+<table><tr><td><div class="element">Attribute <b>setup_flag</b></div></td></tr></table>
+<p>if !=0 the urb setup header is not present<br /></p><p>Declaration :</p><ul><li>Uml : + setup_flag : char</li><li>C++ : public: char setup_flag</li></ul><a name="ref1_229900"></a>
+<table><tr><td><div class="element">Attribute <b>data_flag</b></div></td></tr></table>
+<p>if !=0 no urb data is present<br /></p><p>Declaration :</p><ul><li>Uml : + data_flag : char</li><li>C++ : public: char data_flag</li></ul><a name="ref0_196620"></a>
+<table><tr><td><div class="element">Relation <b>ts_sec (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ts_sec : <a href="class178828.html#ref4_178828"><b>int64_t</b></a></li><li>C++ : public: <a href="class178828.html#ref4_178828"><b>int64_t</b></a> ts_sec</li></ul><a name="ref0_196748"></a>
+<table><tr><td><div class="element">Relation <b>ts_usec (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ts_usec : <a href="class163980.html#ref4_163980"><b>int32_t</b></a></li><li>C++ : public: <a href="class163980.html#ref4_163980"><b>int32_t</b></a> ts_usec</li></ul><a name="ref0_196876"></a>
+<table><tr><td><div class="element">Relation <b>status (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + status : <a href="class163980.html#ref4_163980"><b>int32_t</b></a></li><li>C++ : public: <a href="class163980.html#ref4_163980"><b>int32_t</b></a> status</li></ul><a name="ref0_197004"></a>
+<table><tr><td><div class="element">Relation <b>urb_len (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + urb_len : <a href="class222092.html#ref4_222092"><b>u_int32_t</b></a></li><li>C++ : public: <a href="class222092.html#ref4_222092"><b>u_int32_t</b></a> urb_len</li></ul><a name="ref0_197132"></a>
+<table><tr><td><div class="element">Relation <b>data_len (&lt;directional composition&gt;)</b></div></td></tr></table><p> amount of urb data really present in this event<br /></p><p>Declaration :</p><ul><li>Uml : + data_len : <a href="class222092.html#ref4_222092"><b>u_int32_t</b></a></li><li>C++ : public: <a href="class222092.html#ref4_222092"><b>u_int32_t</b></a> data_len</li></ul><a name="ref0_197260"></a>
+<table><tr><td><div class="element">Relation <b>setup (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setup : <a href="class227596.html#ref4_227596"><b>pcap_usb_setup</b></a></li><li>C++ : public: <a href="class227596.html#ref4_227596"><b>pcap_usb_setup</b></a> setup</li></ul></div>
+</body>
+</html>

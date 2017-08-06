@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class OPENSSL_STRING</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class OPENSSL_STRING</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_204428"></a>
+<p>-<br />Strings are special: normally an lhash entry will point to a single<br />(somewhat) mutable object. In the case of strings:<br /><br />a) Instead of a single char, there is an array of chars, NUL-terminated.<br />b) The string may have be immutable.<br /><br />So, they need their own declarations. Especially important for<br />type-checking tools, such as Deputy.<br /><br />In practice, however, it appears to be hard to have a const<br />string. For now, I'm settling for dealing with the fact it is a<br />string at all.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef char*  OPENSSL_STRING; </li></ul><p>Artifact : <a href="index.html#ref8_142220"><b>safestack</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

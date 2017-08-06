@@ -1,0 +1,6 @@
+class SocketSelectingOnceTable
+!!!136460.cpp!!!	SocketSelectingOnceTable(in  : void)
+	RecvLen = 0;
+	IsPacketDone = false;
+
+	return;

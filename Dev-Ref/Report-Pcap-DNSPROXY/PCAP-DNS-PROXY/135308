@@ -1,0 +1,702 @@
+format 213
+"LibSodium" // Dependency::LibSodium
+  revision 1
+  modified_by 12 "marchon"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/LibSodium/"
+  cpp_src_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/LibSodium/"
+  classview 135052 "LibSodium"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 162444 "CRYPTO_ALIGN"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 162572 "16"
+      visibility package stereotype "typedef" base_type class_ref 162444 // CRYPTO_ALIGN
+      cpp_decl "${comment}typedef ${type}(   ${name}) unsigned char crypto_aead_aes256gcm_state[512];
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 167308 // <dependency>
+	relation 167308 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 167308 // <dependency>
+	  b parent class_ref 162444 // CRYPTO_ALIGN
+      end
+    end
+
+    class 162700 "crypto_auth_hmacsha256_state"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " ------------------------------------------------------------------------- "
+      classrelation 167436 // ictx (<directional composition>)
+	relation 167436 *-->
+	  a role_name "ictx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 167436 // ictx (<directional composition>)
+	  b parent class_ref 162828 // crypto_hash_sha256_state
+      end
+
+      classrelation 167564 // octx (<directional composition>)
+	relation 167564 *-->
+	  a role_name "octx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 167564 // octx (<directional composition>)
+	  b parent class_ref 162828 // crypto_hash_sha256_state
+      end
+    end
+
+    class 162828 "crypto_hash_sha256_state"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 168076 // state (<directional composition>)
+	relation 168076 *-->
+	  a role_name "state" multiplicity "[8]" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 168076 // state (<directional composition>)
+	  b parent class_ref 140300 // uint32_t
+      end
+
+      classrelation 168204 // count (<directional composition>)
+	relation 168204 *-->
+	  a role_name "count" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 168204 // count (<directional composition>)
+	  b parent class_ref 141196 // uint64_t
+      end
+
+      classrelation 168332 // buf (<directional composition>)
+	relation 168332 *-->
+	  a role_name "buf" multiplicity "[64]" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 168332 // buf (<directional composition>)
+	  b parent class_ref 140428 // uint8_t
+      end
+    end
+
+    class 162956 "crypto_auth_hmacsha512_state"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " ------------------------------------------------------------------------- "
+      classrelation 167692 // ictx (<directional composition>)
+	relation 167692 *-->
+	  a role_name "ictx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 167692 // ictx (<directional composition>)
+	  b parent class_ref 163084 // crypto_hash_sha512_state
+      end
+
+      classrelation 167820 // octx (<directional composition>)
+	relation 167820 *-->
+	  a role_name "octx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 167820 // octx (<directional composition>)
+	  b parent class_ref 163084 // crypto_hash_sha512_state
+      end
+    end
+
+    class 163084 "crypto_hash_sha512_state"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 168460 // state (<directional composition>)
+	relation 168460 *-->
+	  a role_name "state" multiplicity "[8]" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 168460 // state (<directional composition>)
+	  b parent class_ref 141196 // uint64_t
+      end
+
+      classrelation 168588 // count (<directional composition>)
+	relation 168588 *-->
+	  a role_name "count" multiplicity "[2]" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 168588 // count (<directional composition>)
+	  b parent class_ref 141196 // uint64_t
+      end
+
+      classrelation 168716 // buf (<directional composition>)
+	relation 168716 *-->
+	  a role_name "buf" multiplicity "[128]" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 168716 // buf (<directional composition>)
+	  b parent class_ref 140428 // uint8_t
+      end
+    end
+
+    class 163212 "crypto_auth_hmacsha512256_state"
+      visibility package stereotype "typedef" base_type class_ref 162956 // crypto_auth_hmacsha512_state
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " ------------------------------------------------------------------------- "
+      classrelation 167948 // <dependency>
+	relation 167948 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 167948 // <dependency>
+	  b parent class_ref 162956 // crypto_auth_hmacsha512_state
+      end
+    end
+
+    class 163340 "crypto_generichash_state"
+      visibility package stereotype "typedef" explicit_base_type "crypto_generichash_blake2b_state"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 163468 "crypto_onetimeauth_state"
+      visibility package stereotype "typedef" explicit_base_type "crypto_onetimeauth_poly1305_state"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 163596 "crypto_sign_ed25519ph_state"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 168972 // hs (<directional composition>)
+	relation 168972 *-->
+	  a role_name "hs" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 168972 // hs (<directional composition>)
+	  b parent class_ref 163084 // crypto_hash_sha512_state
+      end
+    end
+
+    class 163724 "crypto_sign_state"
+      visibility package stereotype "typedef" base_type class_ref 163596 // crypto_sign_ed25519ph_state
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 168844 // <dependency>
+	relation 168844 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 168844 // <dependency>
+	  b parent class_ref 163596 // crypto_sign_ed25519ph_state
+      end
+    end
+
+    class 163852 "randombytes_implementation"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 181772 "implementation_name"
+	const_attribute public explicit_type "char *(*)(void)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}   char *(*${name})(void)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " required "
+      end
+
+      attribute 181900 "random"
+	public explicit_type "// required // required uint32_t (*)(void)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    // required 
+    
+        // required 
+            uint32_t    (*${name})(void)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " required 
+ required 
+"
+      end
+
+      attribute 182028 "stir"
+	public explicit_type "// optional // optional void (*)(void)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    // optional 
+    
+        // optional 
+            void        (*${name})(void)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " optional 
+ optional 
+"
+      end
+
+      attribute 182156 "uniform"
+	public explicit_type "// optional, a default implementation will be used if NULL // optional, a default implementation will be used if NULL uint32_t (*)(const uint32_t upper_bound)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    // optional, a default implementation will be used if NULL 
+    
+        // optional, a default implementation will be used if NULL 
+            uint32_t    (*${name})(const uint32_t upper_bound)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " optional, a default implementation will be used if NULL 
+ optional, a default implementation will be used if NULL 
+"
+      end
+
+      attribute 182284 "buf"
+	public explicit_type "// required // required void (*)(void * const buf, const size_t size)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    // required 
+    
+        // required 
+            void        (*${name})(void * const buf, const size_t size)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " required 
+ required 
+"
+      end
+
+      attribute 182412 "close"
+	public explicit_type "// optional // optional int (*)(void)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    // optional 
+    
+        // optional 
+            int         (*${name})(void)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " optional 
+ optional 
+"
+      end
+    end
+  end
+
+  deploymentview 134668 "LibSodium"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 135052 "crypto_aead_aes256gcm"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 162572 // 16
+      end
+    end
+
+    artifact 135180 "crypto_auth_hmacsha256"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 162700 // crypto_auth_hmacsha256_state
+      end
+    end
+
+    artifact 135308 "crypto_auth_hmacsha512"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 162956 // crypto_auth_hmacsha512_state
+      end
+    end
+
+    artifact 135436 "crypto_auth_hmacsha512256"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163212 // crypto_auth_hmacsha512256_state
+      end
+    end
+
+    artifact 135564 "crypto_generichash"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163340 // crypto_generichash_state
+      end
+    end
+
+    artifact 135692 "crypto_hash_sha256"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 162828 // crypto_hash_sha256_state
+      end
+    end
+
+    artifact 135820 "crypto_hash_sha512"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163084 // crypto_hash_sha512_state
+      end
+    end
+
+    artifact 135948 "crypto_onetimeauth"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163468 // crypto_onetimeauth_state
+      end
+    end
+
+    artifact 136076 "crypto_sign"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163724 // crypto_sign_state
+      end
+    end
+
+    artifact 136204 "crypto_sign_ed25519"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163596 // crypto_sign_ed25519ph_state
+      end
+    end
+
+    artifact 136332 "randombytes"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 163852 // randombytes_implementation
+      end
+    end
+  end
+
+  package_ref 135436 // private
+end

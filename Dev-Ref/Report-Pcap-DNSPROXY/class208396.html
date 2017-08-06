@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ssl_ct_validation_cb</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ssl_ct_validation_cb</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_208396"></a>
+<p>A callback for verifying that the received SCTs are sufficient.<br />Expected to return 1 if they are sufficient, otherwise 0.<br />May return a negative integer if an error occurs.<br />A connection should be aborted if the SCTs are deemed insufficient.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef int(*  ssl_ct_validation_cb)(const CT_POLICY_EVAL_CTX *ctx, const STACK_OF(SCT) *scts, void *arg); </li></ul><p>Artifact : <a href="index.html#ref8_142732"><b>ssl</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

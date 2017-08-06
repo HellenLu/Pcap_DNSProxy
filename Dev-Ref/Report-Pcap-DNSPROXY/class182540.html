@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class dynamic_bind_engine</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class dynamic_bind_engine</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_182540"></a>
+<p>This function is passed the ENGINE structure to initialise with its own<br />function and command settings. It should not adjust the structural or<br />functional reference counts. If this function returns zero, (a) the load<br />will be aborted, (b) the previous ENGINE state will be memcpy'd back onto<br />the structure, and (c) the shared library will be unloaded. So<br />implementations should do their own internal cleanup in failure<br />circumstances otherwise they could leak. The 'id' parameter, if non-NULL,<br />represents the ENGINE id that the loader is looking for. If this is NULL,<br />the shared library can choose to return failure or to initialise a<br />'default' ENGINE. If non-NULL, the shared library must initialise only an<br />ENGINE matching the passed 'id'. The function is expected to be<br />implemented with the symbol name "bind_engine". A standard implementation<br />can be instantiated with IMPLEMENT_DYNAMIC_BIND_FN(fn) where the parameter<br />'fn' is a callback function that populates the ENGINE structure and<br />returns an int value (zero for failure). 'fn' should have prototype;<br />[static] int fn(ENGINE *e, const char *id);<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef int(*  dynamic_bind_engine) (ENGINE *e, const char *id, const dynamic_fns *fns); </li></ul><p>Artifact : <a href="index.html#ref8_139532"><b>engine</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

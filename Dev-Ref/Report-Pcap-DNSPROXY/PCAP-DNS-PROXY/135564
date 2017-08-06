@@ -1,0 +1,640 @@
+format 213
+"internal" // Dependency::OpenSSL::internal
+  revision 1
+  modified_by 12 "marchon"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/OpenSSL/internal/"
+  cpp_src_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/OpenSSL/internal/"
+  classview 135308 "internal"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 164876 "bio_method_st"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 182540 "type"
+	public explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 182668 "name"
+	const_attribute public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 182796 "bwrite"
+	public explicit_type "int (*) (BIO *, const char *, int)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *, const char *, int)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 182924 "bread"
+	public explicit_type "int (*) (BIO *, char *, int)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *, char *, int)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183052 "bputs"
+	public explicit_type "int (*) (BIO *, const char *)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *, const char *)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183180 "bgets"
+	public explicit_type "int (*) (BIO *, char *, int)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *, char *, int)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183308 "ctrl"
+	public explicit_type "long (*) (BIO *, int, long, void *)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            long (*${name}) (BIO *, int, long, void *)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183436 "create"
+	public explicit_type "int (*) (BIO *)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183564 "destroy"
+	public explicit_type "int (*) (BIO *)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            int (*${name}) (BIO *)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 183692 "callback_ctrl"
+	public explicit_type "long (*) (BIO *, int, bio_info_cb *)"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    
+            long (*${name}) (BIO *, int, bio_info_cb *)${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 165004 "ossl_init_settings_st"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 183820 "appname"
+	public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 165132 "danetls_record_st"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 171532 // usage (<directional composition>)
+	relation 171532 *-->
+	  a role_name "usage" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171532 // usage (<directional composition>)
+	  b parent class_ref 140428 // uint8_t
+      end
+
+      classrelation 171660 // selector (<directional composition>)
+	relation 171660 *-->
+	  a role_name "selector" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171660 // selector (<directional composition>)
+	  b parent class_ref 140428 // uint8_t
+      end
+
+      classrelation 171788 // mtype (<directional composition>)
+	relation 171788 *-->
+	  a role_name "mtype" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171788 // mtype (<directional composition>)
+	  b parent class_ref 140428 // uint8_t
+      end
+
+      attribute 183948 "data"
+	public explicit_type "byte"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 184076 "dlen"
+	public explicit_type "size_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 171916 // spki (<unidirectional association>)
+	relation 171916 --->
+	  a role_name "spki" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 171916 // spki (<unidirectional association>)
+	  b parent class_ref 165260 // EVP_PKEY
+      end
+    end
+
+    class 165388 "danetls_record"
+      visibility package stereotype "typedef" base_type class_ref 165132 // danetls_record_st
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 209036 // <dependency>
+	relation 209036 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 209036 // <dependency>
+	  b parent class_ref 165132 // danetls_record_st
+      end
+    end
+
+    class 165516 "ssl_dane_st"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Per connection DANE state
+"
+      attribute 184204 "dctx"
+	public explicit_type "dane_ctx_st"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 172044 // mtlsa (<unidirectional association>)
+	relation 172044 --->
+	  a role_name "mtlsa" public
+	    comment " DANE-TA(2) Cert(0) Full(0) certs 
+ Matching TLSA record "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 172044 // mtlsa (<unidirectional association>)
+	  b parent class_ref 165388 // danetls_record
+      end
+
+      classrelation 172172 // mcert (<unidirectional association>)
+	relation 172172 --->
+	  a role_name "mcert" public
+	    comment " DANE matched cert "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 172172 // mcert (<unidirectional association>)
+	  b parent class_ref 165644 // X509
+      end
+
+      classrelation 172300 // umask (<directional composition>)
+	relation 172300 *-->
+	  a role_name "umask" public
+	    comment " Usages present "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 172300 // umask (<directional composition>)
+	  b parent class_ref 140300 // uint32_t
+      end
+
+      attribute 184332 "mdpth"
+	public explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " Depth of matched cert "
+      end
+
+      attribute 184460 "pdpth"
+	public explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " Depth of PKIX trust "
+      end
+
+      attribute 184588 "flags"
+	public explicit_type "ulong"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " feature bitmask "
+      end
+    end
+
+    class 165772 "DSO_FUNC_TYPE"
+      visibility package stereotype "typedef" explicit_base_type "void"
+      cpp_decl "${comment}typedef ${type}(*   ${name}) (void);
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 165900 "DSO"
+      visibility package stereotype "typedef" explicit_base_type "dso_st"
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 166028 "DSO_METHOD"
+      visibility package stereotype "typedef" explicit_base_type "dso_meth_st"
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 166156 "DSO_NAME_CONVERTER_FUNC"
+      visibility package stereotype "typedef" explicit_base_type "char"
+      cpp_decl "${comment}typedef ${type}*(*   ${name})(DSO *, const char *);
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "The function prototype used for method functions (or caller-provided
+callbacks) that transform filenames. They are passed a DSO structure
+pointer (or NULL if they are to be used independently of a DSO object) and
+a filename to transform. They should either return NULL (if there is an
+error condition) or a newly allocated string containing the transformed
+form that the caller will need to free with OPENSSL_free() when done.
+"
+    end
+
+    class 166284 "DSO_MERGER_FUNC"
+      visibility package stereotype "typedef" explicit_base_type "char"
+      cpp_decl "${comment}typedef ${type}*(*   ${name})(DSO *, const char *, const char *);
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "The function prototype used for method functions (or caller-provided
+callbacks) that merge two file specifications. They are passed a DSO
+structure pointer (or NULL if they are to be used independently of a DSO
+object) and two file specifications to merge. They should either return
+NULL (if there is an error condition) or a newly allocated string
+containing the result of merging that the caller will need to free with
+OPENSSL_free() when done. Here, merging means that bits and pieces are
+taken from each of the file specifications and added together in whatever
+fashion that is sensible for the DSO method in question.  The only rule
+that really applies is that if the two specification contain pieces of the
+same type, the copy from the first string takes priority.  One could see
+it as the first specification is the one given by the user and the second
+being a bunch of defaults to add on if they're missing in the first.
+"
+    end
+
+    class 166412 "OPENSSL_DIR_CTX"
+      visibility package stereotype "typedef" explicit_base_type "OPENSSL_dir_context_st"
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+  end
+
+  deploymentview 134924 "internal"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 136588 "bio"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 164876 // bio_method_st
+      end
+    end
+
+    artifact 136716 "conf"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 165004 // ossl_init_settings_st
+      end
+    end
+
+    artifact 136844 "dane"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 165132 // danetls_record_st
+	class_ref 165388 // danetls_record
+	class_ref 165516 // ssl_dane_st
+      end
+    end
+
+    artifact 136972 "dso"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 165772 // DSO_FUNC_TYPE
+	class_ref 165900 // DSO
+	class_ref 166028 // DSO_METHOD
+	class_ref 166156 // DSO_NAME_CONVERTER_FUNC
+	class_ref 166284 // DSO_MERGER_FUNC
+      end
+    end
+
+    artifact 137100 "o_dir"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 166412 // OPENSSL_DIR_CTX
+      end
+    end
+  end
+end

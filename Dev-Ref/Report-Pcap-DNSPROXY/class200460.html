@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pem_ctx_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pem_ctx_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_200460"></a>
+<p>      char iv[8]; unused and wrong size <br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pem_ctx_st </li></ul><p>Artifact : <a href="index.html#ref8_141196"><b>pem</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_203148"></a>
+<table><tr><td><div class="element">Attribute <b>type</b></div></td></tr></table>
+<p> what type of object <br /></p><p>Declaration :</p><ul><li>Uml : + type : int</li><li>C++ : public: int type</li></ul><a name="ref1_203276"></a>
+<table><tr><td><div class="element">Attribute <b>proc_type</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + proc_type : &lt;complex type&gt;</li><li>C++ : public: struct   { int version</li></ul><a name="ref1_203404"></a>
+<table><tr><td><div class="element">Attribute <b>domain</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + domain : char</li><li>C++ : public: char * domain</li></ul><a name="ref1_203532"></a>
+<table><tr><td><div class="element">Attribute <b>DEK_info</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DEK_info : &lt;complex type&gt;</li><li>C++ : public: struct   { int cipher</li></ul><a name="ref0_180492"></a>
+<table><tr><td><div class="element">Relation <b>originator (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + originator : <a href="class200332.html#ref4_200332"><b>PEM_USER</b></a></li><li>C++ : public: <a href="class200332.html#ref4_200332"><b>PEM_USER</b></a> * originator</li></ul><a name="ref1_203660"></a>
+<table><tr><td><div class="element">Attribute <b>num_recipient</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + num_recipient : int</li><li>C++ : public: int num_recipient</li></ul><a name="ref1_203788"></a>
+<table><tr><td><div class="element">Attribute <b>recipient</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + recipient : <a href="class200332.html#ref4_200332"><b>PEM_USER</b></a></li><li>C++ : public: <a href="class200332.html#ref4_200332"><b>PEM_USER</b></a> * * recipient</li></ul><a name="ref0_180620"></a>
+<table><tr><td><div class="element">Relation <b>md (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>-<br />XXX(ben): don#t think this is used!<br />STACK *x509_chain;      / * certificate chain <br /> signature type <br /></p><p>Declaration :</p><ul><li>Uml : + md : <a href="class192396.html#ref4_192396"><b>EVP_MD</b></a></li><li>C++ : public: <a href="class192396.html#ref4_192396"><b>EVP_MD</b></a> * md</li></ul><a name="ref1_203916"></a>
+<table><tr><td><div class="element">Attribute <b>md_enc</b></div></td></tr></table>
+<p> is the md encrypted or not? <br /></p><p>Declaration :</p><ul><li>Uml : + md_enc : int</li><li>C++ : public: int md_enc</li></ul><a name="ref1_204044"></a>
+<table><tr><td><div class="element">Attribute <b>md_len</b></div></td></tr></table>
+<p> length of md_data <br /></p><p>Declaration :</p><ul><li>Uml : + md_len : int</li><li>C++ : public: int md_len</li></ul><a name="ref1_204172"></a>
+<table><tr><td><div class="element">Attribute <b>md_data</b></div></td></tr></table>
+<p> message digest, could be pkey encrypted <br /></p><p>Declaration :</p><ul><li>Uml : + md_data : char</li><li>C++ : public: char * md_data</li></ul><a name="ref0_180748"></a>
+<table><tr><td><div class="element">Relation <b>dec (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> date encryption cipher <br /></p><p>Declaration :</p><ul><li>Uml : + dec : <a href="class183436.html#ref4_183436"><b>EVP_CIPHER</b></a></li><li>C++ : public: <a href="class183436.html#ref4_183436"><b>EVP_CIPHER</b></a> * dec</li></ul><a name="ref1_204300"></a>
+<table><tr><td><div class="element">Attribute <b>key_len</b></div></td></tr></table>
+<p> key length <br /></p><p>Declaration :</p><ul><li>Uml : + key_len : int</li><li>C++ : public: int key_len</li></ul><a name="ref1_204428"></a>
+<table><tr><td><div class="element">Attribute <b>key</b></div></td></tr></table>
+<p> key <br /></p><p>Declaration :</p><ul><li>Uml : + key : byte</li><li>C++ : public: unsigned char * key</li></ul><a name="ref1_204556"></a>
+<table><tr><td><div class="element">Attribute <b>data_enc</b></div></td></tr></table>
+<p>-<br />unused, and wrong size<br />unsigned char iv[8]; <br /> is the data encrypted <br /></p><p>Declaration :</p><ul><li>Uml : + data_enc : int</li><li>C++ : public: int data_enc</li></ul><a name="ref1_204684"></a>
+<table><tr><td><div class="element">Attribute <b>data_len</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + data_len : int</li><li>C++ : public: int data_len</li></ul><a name="ref1_204812"></a>
+<table><tr><td><div class="element">Attribute <b>data</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + data : byte</li><li>C++ : public: unsigned char * data</li></ul></div>
+</body>
+</html>

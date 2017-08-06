@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pkcs7_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pkcs7_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_202636"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct pkcs7_st </li></ul><p>Artifact : <a href="index.html#ref8_141452"><b>pkcs7</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_204940"></a>
+<table><tr><td><div class="element">Attribute <b>asn1</b></div></td></tr></table>
+<p>The following is non NULL if it contains ASN1 encoding of this<br />structure<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + asn1 : byte</li><li>C++ : public: unsigned char * asn1</li></ul><a name="ref1_205068"></a>
+<table><tr><td><div class="element">Attribute <b>length</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + length : long</li><li>C++ : public: long length</li></ul><a name="ref1_205196"></a>
+<table><tr><td><div class="element">Attribute <b>state</b></div></td></tr></table>
+<p> used during processing <br /></p><p>Declaration :</p><ul><li>Uml : + state : int</li><li>C++ : public: int state</li></ul><a name="ref1_205324"></a>
+<table><tr><td><div class="element">Attribute <b>detached</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + detached : int</li><li>C++ : public: int detached</li></ul><a name="ref0_183692"></a>
+<table><tr><td><div class="element">Relation <b>type (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + type : <a href="class191116.html#ref4_191116"><b>ASN1_OBJECT</b></a></li><li>C++ : public: <a href="class191116.html#ref4_191116"><b>ASN1_OBJECT</b></a> * type</li></ul><a name="ref1_205452"></a>
+<table><tr><td><div class="element">Attribute <b>d</b></div></td></tr></table>
+<p> content as defined by the type <br /><br />all encryption/message digests are applied to the 'contents', leaving<br />out the 'type' field.<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + d : &lt;complex type&gt;</li><li>C++ : public: union   { char *ptr</li></ul></div>
+</body>
+</html>

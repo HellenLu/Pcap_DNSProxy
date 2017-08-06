@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class v3_ext_method</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class v3_ext_method</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_216332"></a>
+<p> V3 extension structure <br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct v3_ext_method </li></ul><p>Artifact : <a href="index.html#ref8_143884"><b>x509v3</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_213644"></a>
+<table><tr><td><div class="element">Attribute <b>ext_nid</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ext_nid : int</li><li>C++ : public: int ext_nid</li></ul><a name="ref1_213772"></a>
+<table><tr><td><div class="element">Attribute <b>ext_flags</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ext_flags : int</li><li>C++ : public: int ext_flags</li></ul><a name="ref0_186764"></a>
+<table><tr><td><div class="element">Relation <b>it (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> If this is set the following four fields are ignored <br /><br /></p><p>Declaration :</p><ul><li>Uml : + it : <a href="class167820.html#ref4_167820"><b>ASN1_ITEM_EXP</b></a></li><li>C++ : public: <a href="class167820.html#ref4_167820"><b>ASN1_ITEM_EXP</b></a> * it</li></ul><a name="ref0_186892"></a>
+<table><tr><td><div class="element">Relation <b>ext_new (&lt;directional composition&gt;)</b></div></td></tr></table><p> Old style ASN1 calls <br /><br /></p><p>Declaration :</p><ul><li>Uml : + ext_new : <a href="class215180.html#ref4_215180"><b>X509V3_EXT_NEW</b></a></li><li>C++ : public: <a href="class215180.html#ref4_215180"><b>X509V3_EXT_NEW</b></a> ext_new</li></ul><a name="ref0_187020"></a>
+<table><tr><td><div class="element">Relation <b>ext_free (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ext_free : <a href="class215308.html#ref4_215308"><b>X509V3_EXT_FREE</b></a></li><li>C++ : public: <a href="class215308.html#ref4_215308"><b>X509V3_EXT_FREE</b></a> ext_free</li></ul><a name="ref0_187148"></a>
+<table><tr><td><div class="element">Relation <b>d2i (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + d2i : <a href="class215436.html#ref4_215436"><b>X509V3_EXT_D2I</b></a></li><li>C++ : public: <a href="class215436.html#ref4_215436"><b>X509V3_EXT_D2I</b></a> d2i</li></ul><a name="ref0_187276"></a>
+<table><tr><td><div class="element">Relation <b>i2d (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + i2d : <a href="class215564.html#ref4_215564"><b>X509V3_EXT_I2D</b></a></li><li>C++ : public: <a href="class215564.html#ref4_215564"><b>X509V3_EXT_I2D</b></a> i2d</li></ul><a name="ref0_187404"></a>
+<table><tr><td><div class="element">Relation <b>i2s (&lt;directional composition&gt;)</b></div></td></tr></table><p> The following pair is used for string extensions <br /><br /></p><p>Declaration :</p><ul><li>Uml : + i2s : <a href="class215820.html#ref4_215820"><b>X509V3_EXT_I2S</b></a></li><li>C++ : public: <a href="class215820.html#ref4_215820"><b>X509V3_EXT_I2S</b></a> i2s</li></ul><a name="ref0_187532"></a>
+<table><tr><td><div class="element">Relation <b>s2i (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + s2i : <a href="class215948.html#ref4_215948"><b>X509V3_EXT_S2I</b></a></li><li>C++ : public: <a href="class215948.html#ref4_215948"><b>X509V3_EXT_S2I</b></a> s2i</li></ul><a name="ref1_213900"></a>
+<table><tr><td><div class="element">Attribute <b>i2v</b></div></td></tr></table>
+<p> The following pair is used for multi-valued extensions <br /><br /></p><p>Declaration :</p><ul><li>Uml : + i2v : X509V3_EXT_I2V</li><li>C++ : public: X509V3_EXT_I2V i2v</li></ul><a name="ref0_187660"></a>
+<table><tr><td><div class="element">Relation <b>v2i (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + v2i : <a href="class215692.html#ref4_215692"><b>X509V3_EXT_V2I</b></a></li><li>C++ : public: <a href="class215692.html#ref4_215692"><b>X509V3_EXT_V2I</b></a> v2i</li></ul><a name="ref0_187788"></a>
+<table><tr><td><div class="element">Relation <b>i2r (&lt;directional composition&gt;)</b></div></td></tr></table><p> The following are used for raw extensions <br /><br /></p><p>Declaration :</p><ul><li>Uml : + i2r : <a href="class216076.html#ref4_216076"><b>X509V3_EXT_I2R</b></a></li><li>C++ : public: <a href="class216076.html#ref4_216076"><b>X509V3_EXT_I2R</b></a> i2r</li></ul><a name="ref0_187916"></a>
+<table><tr><td><div class="element">Relation <b>r2i (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + r2i : <a href="class216204.html#ref4_216204"><b>X509V3_EXT_R2I</b></a></li><li>C++ : public: <a href="class216204.html#ref4_216204"><b>X509V3_EXT_R2I</b></a> r2i</li></ul><a name="ref1_214028"></a>
+<table><tr><td><div class="element">Attribute <b>usr_data</b></div></td></tr></table>
+<p> Any extension specific data <br /></p><p>Declaration :</p><ul><li>Uml : + usr_data : void</li><li>C++ : public: void * usr_data</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class rand_meth_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class rand_meth_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_194316"></a>
+<p> Already defined in ossl_typ.h <br /> typedef struct rand_meth_st RAND_METHOD; <br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct rand_meth_st </li></ul><p>Artifact : <a href="index.html#ref8_141580"><b>rand</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_205580"></a>
+<table><tr><td><div class="element">Attribute <b>seed</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + seed : int (*) (const void *buf, int num)</li><li>C++ : public:  int (*seed) (const void *buf, int num)</li></ul><a name="ref1_205708"></a>
+<table><tr><td><div class="element">Attribute <b>bytes</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bytes : int (*) (unsigned char *buf, int num)</li><li>C++ : public:  int (*bytes) (unsigned char *buf, int num)</li></ul><a name="ref1_205836"></a>
+<table><tr><td><div class="element">Attribute <b>cleanup</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + cleanup : void (*) (void)</li><li>C++ : public:  void (*cleanup) (void)</li></ul><a name="ref1_205964"></a>
+<table><tr><td><div class="element">Attribute <b>add</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + add : int (*) (const void *buf, int num, double entropy)</li><li>C++ : public:  int (*add) (const void *buf, int num, double entropy)</li></ul><a name="ref1_206092"></a>
+<table><tr><td><div class="element">Attribute <b>pseudorand</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + pseudorand : int (*) (unsigned char *buf, int num)</li><li>C++ : public:  int (*pseudorand) (unsigned char *buf, int num)</li></ul><a name="ref1_206220"></a>
+<table><tr><td><div class="element">Attribute <b>status</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + status : int (*) (void)</li><li>C++ : public:  int (*status) (void)</li></ul></div>
+</body>
+</html>

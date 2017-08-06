@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class npf_if_addr</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class npf_if_addr</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_223372"></a>
+<p>!<br />\brief Addresses of a network adapter.<br /><br />This structure is used by the PacketGetNetInfoEx() function to return the IP addresses associated with <br />an adapter.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct npf_if_addr </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_220044"></a>
+<table><tr><td><div class="element">Attribute <b>IPAddress</b></div></td></tr></table>
+<p>/< IP address.<br /></p><p>Declaration :</p><ul><li>Uml : + IPAddress : sockaddr_storage</li><li>C++ : public: struct sockaddr_storage IPAddress</li></ul><a name="ref1_220172"></a>
+<table><tr><td><div class="element">Attribute <b>SubnetMask</b></div></td></tr></table>
+<p>/< Netmask for that address.<br /></p><p>Declaration :</p><ul><li>Uml : + SubnetMask : sockaddr_storage</li><li>C++ : public: struct sockaddr_storage SubnetMask</li></ul><a name="ref1_220300"></a>
+<table><tr><td><div class="element">Attribute <b>Broadcast</b></div></td></tr></table>
+<p>/< Broadcast address.<br /></p><p>Declaration :</p><ul><li>Uml : + Broadcast : sockaddr_storage</li><li>C++ : public: struct sockaddr_storage Broadcast</li></ul></div>
+</body>
+</html>

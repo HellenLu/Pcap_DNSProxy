@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ConfigurationTable</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ConfigurationTable</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_143628"></a>
+<p>Class definitions<br />Configuration class<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class ConfigurationTable </li></ul><p>Artifact : <a href="index.html#ref8_134668"><b>Definition</b></a></p>
+<div class="sub">
+<a name="ref1_155660"></a>
+<table><tr><td><div class="element">Attribute <b>Version_Major</b></div></td></tr></table>
+<p>Parameters from configure files<br />[Base] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Version_Major : size_t</li><li>C++ : public: size_t Version_Major</li></ul><a name="ref1_155788"></a>
+<table><tr><td><div class="element">Attribute <b>Version_Minor</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Version_Minor : size_t</li><li>C++ : public: size_t Version_Minor</li></ul><a name="ref1_155916"></a>
+<table><tr><td><div class="element">Attribute <b>FileRefreshTime</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + FileRefreshTime : size_t</li><li>C++ : public: size_t FileRefreshTime</li></ul><a name="ref1_156044"></a>
+<table><tr><td><div class="element">Attribute <b>LargeBufferSize</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LargeBufferSize : size_t</li><li>C++ : public: size_t LargeBufferSize</li></ul><a name="ref0_136844"></a>
+<table><tr><td><div class="element">Relation <b>PrintLogLevel (&lt;directional composition&gt;)</b></div></td></tr></table><p>[Log] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + PrintLogLevel : <a href="class135436.html#ref4_135436"><b>LOG_LEVEL_TYPE</b></a></li><li>C++ : public: <a href="class135436.html#ref4_135436"><b>LOG_LEVEL_TYPE</b></a> PrintLogLevel</li></ul><a name="ref1_156172"></a>
+<table><tr><td><div class="element">Attribute <b>LogMaxSize</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LogMaxSize : size_t</li><li>C++ : public: size_t LogMaxSize</li></ul><a name="ref1_156300"></a>
+<table><tr><td><div class="element">Attribute <b>IsProcessUnique</b></div></td></tr></table>
+<p>[Listen] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + IsProcessUnique : bool</li><li>C++ : public: bool IsProcessUnique</li></ul><a name="ref1_156428"></a>
+<table><tr><td><div class="element">Attribute <b>IsPcapCapture</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsPcapCapture : bool</li><li>C++ : public: bool IsPcapCapture</li></ul><a name="ref1_156556"></a>
+<table><tr><td><div class="element">Attribute <b>PcapDevicesBlacklist</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PcapDevicesBlacklist : std::string</li><li>C++ : public: std::vector&lt;std::string&gt; * PcapDevicesBlacklist</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_156684"></a>
+<table><tr><td><div class="element">Attribute <b>PcapReadingTimeout</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PcapReadingTimeout : size_t</li><li>C++ : public: size_t PcapReadingTimeout</li></ul><a name="ref0_136972"></a>
+<table><tr><td><div class="element">Relation <b>OperationMode (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + OperationMode : <a href="class136972.html#ref4_136972"><b>LISTEN_MODE</b></a></li><li>C++ : public: <a href="class136972.html#ref4_136972"><b>LISTEN_MODE</b></a> OperationMode</li></ul><a name="ref0_137100"></a>
+<table><tr><td><div class="element">Relation <b>ListenProtocol_Network (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ListenProtocol_Network : <a href="class137228.html#ref4_137228"><b>LISTEN_PROTOCOL_NETWORK</b></a></li><li>C++ : public: <a href="class137228.html#ref4_137228"><b>LISTEN_PROTOCOL_NETWORK</b></a> ListenProtocol_Network</li></ul><a name="ref0_137228"></a>
+<table><tr><td><div class="element">Relation <b>ListenProtocol_Transport (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ListenProtocol_Transport : <a href="class137484.html#ref4_137484"><b>LISTEN_PROTOCOL_TRANSPORT</b></a></li><li>C++ : public: <a href="class137484.html#ref4_137484"><b>LISTEN_PROTOCOL_TRANSPORT</b></a> ListenProtocol_Transport</li></ul><a name="ref1_156812"></a>
+<table><tr><td><div class="element">Attribute <b>ListenPort</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ListenPort : uint16_t</li><li>C++ : public: std::vector&lt;uint16_t&gt; * ListenPort</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_156940"></a>
+<table><tr><td><div class="element">Attribute <b>IsIPFilterTypePermit</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsIPFilterTypePermit : bool</li><li>C++ : public: bool IsIPFilterTypePermit</li></ul><a name="ref1_157068"></a>
+<table><tr><td><div class="element">Attribute <b>IPFilterLevel</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IPFilterLevel : size_t</li><li>C++ : public: size_t IPFilterLevel</li></ul><a name="ref1_157196"></a>
+<table><tr><td><div class="element">Attribute <b>IsAcceptTypePermit</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsAcceptTypePermit : bool</li><li>C++ : public: bool IsAcceptTypePermit</li></ul><a name="ref1_157324"></a>
+<table><tr><td><div class="element">Attribute <b>AcceptTypeList</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + AcceptTypeList : uint16_t</li><li>C++ : public: std::vector&lt;uint16_t&gt; * AcceptTypeList</li></ul><p>Stereotype: std::vector</p>
+<a name="ref0_137356"></a>
+<table><tr><td><div class="element">Relation <b>RequestMode_Network (&lt;directional composition&gt;)</b></div></td></tr></table><p>[DNS] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + RequestMode_Network : <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a></li><li>C++ : public: <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a> RequestMode_Network</li></ul><a name="ref0_137484"></a>
+<table><tr><td><div class="element">Relation <b>RequestMode_Transport (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + RequestMode_Transport : <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a></li><li>C++ : public: <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a> RequestMode_Transport</li></ul><a name="ref0_137612"></a>
+<table><tr><td><div class="element">Relation <b>DirectRequest (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DirectRequest : <a href="class138508.html#ref4_138508"><b>REQUEST_MODE_DIRECT</b></a></li><li>C++ : public: <a href="class138508.html#ref4_138508"><b>REQUEST_MODE_DIRECT</b></a> DirectRequest</li></ul><a name="ref0_137740"></a>
+<table><tr><td><div class="element">Relation <b>DNS_CacheType (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DNS_CacheType : <a href="class136204.html#ref4_136204"><b>DNS_CACHE_TYPE</b></a></li><li>C++ : public: <a href="class136204.html#ref4_136204"><b>DNS_CACHE_TYPE</b></a> DNS_CacheType</li></ul><a name="ref1_157452"></a>
+<table><tr><td><div class="element">Attribute <b>DNS_CacheParameter</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNS_CacheParameter : size_t</li><li>C++ : public: size_t DNS_CacheParameter</li></ul><a name="ref1_157580"></a>
+<table><tr><td><div class="element">Attribute <b>DNS_CacheSinglePrefix_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNS_CacheSinglePrefix_IPv6 : size_t</li><li>C++ : public: size_t DNS_CacheSinglePrefix_IPv6</li></ul><a name="ref1_157708"></a>
+<table><tr><td><div class="element">Attribute <b>DNS_CacheSinglePrefix_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNS_CacheSinglePrefix_IPv4 : size_t</li><li>C++ : public: size_t DNS_CacheSinglePrefix_IPv4</li></ul><a name="ref0_137868"></a>
+<table><tr><td><div class="element">Relation <b>HostsDefaultTTL (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + HostsDefaultTTL : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> HostsDefaultTTL</li></ul><a name="ref0_137996"></a>
+<table><tr><td><div class="element">Relation <b>LocalProtocol_Network (&lt;directional composition&gt;)</b></div></td></tr></table><p>[Local DNS] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + LocalProtocol_Network : <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a></li><li>C++ : public: <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a> LocalProtocol_Network</li></ul><a name="ref0_138124"></a>
+<table><tr><td><div class="element">Relation <b>LocalProtocol_Transport (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LocalProtocol_Transport : <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a></li><li>C++ : public: <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a> LocalProtocol_Transport</li></ul><a name="ref1_157836"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalHosts</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalHosts : bool</li><li>C++ : public: bool IsLocalHosts</li></ul><a name="ref1_157964"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalRouting</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalRouting : bool</li><li>C++ : public: bool IsLocalRouting</li></ul><a name="ref1_158092"></a>
+<table><tr><td><div class="element">Attribute <b>IsLocalForce</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsLocalForce : bool</li><li>C++ : public: bool IsLocalForce</li></ul><a name="ref1_158220"></a>
+<table><tr><td><div class="element">Attribute <b>ListenAddress_IPv6</b></div></td></tr></table>
+<p>[Addresses] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ListenAddress_IPv6 : sockaddr_storage</li><li>C++ : public: std::vector&lt;sockaddr_storage&gt; * ListenAddress_IPv6</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_158348"></a>
+<table><tr><td><div class="element">Attribute <b>ListenAddress_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ListenAddress_IPv4 : sockaddr_storage</li><li>C++ : public: std::vector&lt;sockaddr_storage&gt; * ListenAddress_IPv4</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_158476"></a>
+<table><tr><td><div class="element">Attribute <b>LocalMachineSubnet_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LocalMachineSubnet_IPv6 : ADDRESS_PREFIX_BLOCK</li><li>C++ : public: ADDRESS_PREFIX_BLOCK * LocalMachineSubnet_IPv6</li></ul><a name="ref1_158604"></a>
+<table><tr><td><div class="element">Attribute <b>LocalMachineSubnet_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LocalMachineSubnet_IPv4 : ADDRESS_PREFIX_BLOCK</li><li>C++ : public: ADDRESS_PREFIX_BLOCK * LocalMachineSubnet_IPv4</li></ul><a name="ref1_158732"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Main_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Main_IPv6 : DNS_SERVER_DATA</li><li>C++ : public: DNS_SERVER_DATA Target_Server_Main_IPv6</li></ul><a name="ref1_158860"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Alternate_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Alternate_IPv6 : DNS_SERVER_DATA</li><li>C++ : public: DNS_SERVER_DATA Target_Server_Alternate_IPv6</li></ul><a name="ref1_158988"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Main_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Main_IPv4 : DNS_SERVER_DATA</li><li>C++ : public: DNS_SERVER_DATA Target_Server_Main_IPv4</li></ul><a name="ref1_159116"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Alternate_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Alternate_IPv4 : DNS_SERVER_DATA</li><li>C++ : public: DNS_SERVER_DATA Target_Server_Alternate_IPv4</li></ul><a name="ref1_159244"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Local_Main_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Local_Main_IPv6 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA Target_Server_Local_Main_IPv6</li></ul><a name="ref1_159372"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Local_Alternate_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Local_Alternate_IPv6 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA Target_Server_Local_Alternate_IPv6</li></ul><a name="ref1_159500"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Local_Main_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Local_Main_IPv4 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA Target_Server_Local_Main_IPv4</li></ul><a name="ref1_159628"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_Local_Alternate_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_Local_Alternate_IPv4 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA Target_Server_Local_Alternate_IPv4</li></ul><a name="ref1_159756"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_IPv6_Multiple</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_IPv6_Multiple : DNS_SERVER_DATA</li><li>C++ : public: std::vector&lt;DNS_SERVER_DATA&gt; * Target_Server_IPv6_Multiple</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_159884"></a>
+<table><tr><td><div class="element">Attribute <b>Target_Server_IPv4_Multiple</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Target_Server_IPv4_Multiple : DNS_SERVER_DATA</li><li>C++ : public: std::vector&lt;DNS_SERVER_DATA&gt; * Target_Server_IPv4_Multiple</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_160012"></a>
+<table><tr><td><div class="element">Attribute <b>ThreadPoolBaseNum</b></div></td></tr></table>
+<p>[Values] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ThreadPoolBaseNum : size_t</li><li>C++ : public: size_t ThreadPoolBaseNum</li></ul><a name="ref1_160140"></a>
+<table><tr><td><div class="element">Attribute <b>ThreadPoolMaxNum</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ThreadPoolMaxNum : size_t</li><li>C++ : public: size_t ThreadPoolMaxNum</li></ul><a name="ref1_160268"></a>
+<table><tr><td><div class="element">Attribute <b>ThreadPoolResetTime</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ThreadPoolResetTime : size_t</li><li>C++ : public: size_t ThreadPoolResetTime</li></ul><a name="ref1_160396"></a>
+<table><tr><td><div class="element">Attribute <b>QueueResetTime</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + QueueResetTime : size_t</li><li>C++ : public: size_t QueueResetTime</li></ul><a name="ref1_160524"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_PayloadSize</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_PayloadSize : size_t</li><li>C++ : public: size_t EDNS_PayloadSize</li></ul><a name="ref1_160652"></a>
+<table><tr><td><div class="element">Attribute <b>PacketHopLimits_IPv6_Begin</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PacketHopLimits_IPv6_Begin : DWORD</li><li>C++ : public: DWORD PacketHopLimits_IPv6_Begin</li></ul><a name="ref1_160780"></a>
+<table><tr><td><div class="element">Attribute <b>PacketHopLimits_IPv6_End</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PacketHopLimits_IPv6_End : DWORD</li><li>C++ : public: DWORD PacketHopLimits_IPv6_End</li></ul><a name="ref1_160908"></a>
+<table><tr><td><div class="element">Attribute <b>PacketHopLimits_IPv4_Begin</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PacketHopLimits_IPv4_Begin : DWORD</li><li>C++ : public: DWORD PacketHopLimits_IPv4_Begin</li></ul><a name="ref1_161036"></a>
+<table><tr><td><div class="element">Attribute <b>PacketHopLimits_IPv4_End</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + PacketHopLimits_IPv4_End : DWORD</li><li>C++ : public: DWORD PacketHopLimits_IPv4_End</li></ul><a name="ref0_138252"></a>
+<table><tr><td><div class="element">Relation <b>HopLimitsFluctuation (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + HopLimitsFluctuation : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> HopLimitsFluctuation</li></ul><a name="ref1_161164"></a>
+<table><tr><td><div class="element">Attribute <b>SocketTimeout_Reliable_Once</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SocketTimeout_Reliable_Once : DWORD</li><li>C++ : public: DWORD SocketTimeout_Reliable_Once</li></ul><a name="ref1_161292"></a>
+<table><tr><td><div class="element">Attribute <b>SocketTimeout_Reliable_Serial</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SocketTimeout_Reliable_Serial : DWORD</li><li>C++ : public: DWORD SocketTimeout_Reliable_Serial</li></ul><a name="ref1_161420"></a>
+<table><tr><td><div class="element">Attribute <b>SocketTimeout_Unreliable_Once</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SocketTimeout_Unreliable_Once : DWORD</li><li>C++ : public: DWORD SocketTimeout_Unreliable_Once</li></ul><a name="ref1_161548"></a>
+<table><tr><td><div class="element">Attribute <b>SocketTimeout_Unreliable_Serial</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SocketTimeout_Unreliable_Serial : DWORD</li><li>C++ : public: DWORD SocketTimeout_Unreliable_Serial</li></ul><a name="ref1_161676"></a>
+<table><tr><td><div class="element">Attribute <b>TCP_FastOpen</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + TCP_FastOpen : size_t</li><li>C++ : public: size_t TCP_FastOpen</li></ul><a name="ref1_161804"></a>
+<table><tr><td><div class="element">Attribute <b>ReceiveWaiting</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ReceiveWaiting : size_t</li><li>C++ : public: size_t ReceiveWaiting</li></ul><a name="ref1_161932"></a>
+<table><tr><td><div class="element">Attribute <b>AlternateTimes</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + AlternateTimes : size_t</li><li>C++ : public: size_t AlternateTimes</li></ul><a name="ref1_162060"></a>
+<table><tr><td><div class="element">Attribute <b>AlternateTimeRange</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + AlternateTimeRange : size_t</li><li>C++ : public: size_t AlternateTimeRange</li></ul><a name="ref1_162188"></a>
+<table><tr><td><div class="element">Attribute <b>AlternateResetTime</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + AlternateResetTime : size_t</li><li>C++ : public: size_t AlternateResetTime</li></ul><a name="ref1_162316"></a>
+<table><tr><td><div class="element">Attribute <b>MultipleRequestTimes</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + MultipleRequestTimes : size_t</li><li>C++ : public: size_t MultipleRequestTimes</li></ul><a name="ref1_162444"></a>
+<table><tr><td><div class="element">Attribute <b>DomainCaseConversion</b></div></td></tr></table>
+<p>[Switches] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + DomainCaseConversion : bool</li><li>C++ : public: bool DomainCaseConversion</li></ul><a name="ref1_162572"></a>
+<table><tr><td><div class="element">Attribute <b>CompressionPointerMutation</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + CompressionPointerMutation : bool</li><li>C++ : public: bool CompressionPointerMutation</li></ul><a name="ref1_162700"></a>
+<table><tr><td><div class="element">Attribute <b>CPM_PointerToHeader</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + CPM_PointerToHeader : bool</li><li>C++ : public: bool CPM_PointerToHeader</li></ul><a name="ref1_162828"></a>
+<table><tr><td><div class="element">Attribute <b>CPM_PointerToRR</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + CPM_PointerToRR : bool</li><li>C++ : public: bool CPM_PointerToRR</li></ul><a name="ref1_162956"></a>
+<table><tr><td><div class="element">Attribute <b>CPM_PointerToAdditional</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + CPM_PointerToAdditional : bool</li><li>C++ : public: bool CPM_PointerToAdditional</li></ul><a name="ref1_163084"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Label</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Label : bool</li><li>C++ : public: bool EDNS_Label</li></ul><a name="ref1_163212"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_Local</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_Local : bool</li><li>C++ : public: bool EDNS_Switch_Local</li></ul><a name="ref1_163340"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_SOCKS</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_SOCKS : bool</li><li>C++ : public: bool EDNS_Switch_SOCKS</li></ul><a name="ref1_163468"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_HTTP_CONNECT</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_HTTP_CONNECT : bool</li><li>C++ : public: bool EDNS_Switch_HTTP_CONNECT</li></ul><a name="ref1_163596"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_Direct</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_Direct : bool</li><li>C++ : public: bool EDNS_Switch_Direct</li></ul><a name="ref1_163724"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_DNSCurve</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_DNSCurve : bool</li><li>C++ : public: bool EDNS_Switch_DNSCurve</li></ul><a name="ref1_163852"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_TCP</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_TCP : bool</li><li>C++ : public: bool EDNS_Switch_TCP</li></ul><a name="ref1_163980"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_Switch_UDP</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_Switch_UDP : bool</li><li>C++ : public: bool EDNS_Switch_UDP</li></ul><a name="ref1_164108"></a>
+<table><tr><td><div class="element">Attribute <b>EDNS_ClientSubnet_Relay</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + EDNS_ClientSubnet_Relay : bool</li><li>C++ : public: bool EDNS_ClientSubnet_Relay</li></ul><a name="ref1_164236"></a>
+<table><tr><td><div class="element">Attribute <b>DNSSEC_Request</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSSEC_Request : bool</li><li>C++ : public: bool DNSSEC_Request</li></ul><a name="ref1_164364"></a>
+<table><tr><td><div class="element">Attribute <b>DNSSEC_Validation</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSSEC_Validation : bool</li><li>C++ : public: bool DNSSEC_Validation</li></ul><a name="ref1_164492"></a>
+<table><tr><td><div class="element">Attribute <b>DNSSEC_ForceValidation</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DNSSEC_ForceValidation : bool</li><li>C++ : public: bool DNSSEC_ForceValidation</li></ul><a name="ref1_164620"></a>
+<table><tr><td><div class="element">Attribute <b>AlternateMultipleRequest</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + AlternateMultipleRequest : bool</li><li>C++ : public: bool AlternateMultipleRequest</li></ul><a name="ref1_164748"></a>
+<table><tr><td><div class="element">Attribute <b>DoNotFragment</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DoNotFragment : bool</li><li>C++ : public: bool DoNotFragment</li></ul><a name="ref1_164876"></a>
+<table><tr><td><div class="element">Attribute <b>HeaderCheck_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HeaderCheck_IPv4 : bool</li><li>C++ : public: bool HeaderCheck_IPv4</li></ul><a name="ref1_165004"></a>
+<table><tr><td><div class="element">Attribute <b>HeaderCheck_TCP</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HeaderCheck_TCP : bool</li><li>C++ : public: bool HeaderCheck_TCP</li></ul><a name="ref1_165132"></a>
+<table><tr><td><div class="element">Attribute <b>HeaderCheck_DNS</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HeaderCheck_DNS : bool</li><li>C++ : public: bool HeaderCheck_DNS</li></ul><a name="ref1_165260"></a>
+<table><tr><td><div class="element">Attribute <b>DataCheck_Blacklist</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DataCheck_Blacklist : bool</li><li>C++ : public: bool DataCheck_Blacklist</li></ul><a name="ref1_165388"></a>
+<table><tr><td><div class="element">Attribute <b>DataCheck_Strict_RR_TTL</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DataCheck_Strict_RR_TTL : bool</li><li>C++ : public: bool DataCheck_Strict_RR_TTL</li></ul><a name="ref0_138380"></a>
+<table><tr><td><div class="element">Relation <b>ICMP_ID (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ICMP_ID : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> ICMP_ID</li></ul><a name="ref0_138508"></a>
+<table><tr><td><div class="element">Relation <b>ICMP_Sequence (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ICMP_Sequence : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> ICMP_Sequence</li></ul><a name="ref1_165516"></a>
+<table><tr><td><div class="element">Attribute <b>ICMP_Speed</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ICMP_Speed : size_t</li><li>C++ : public: size_t ICMP_Speed</li></ul><a name="ref0_138636"></a>
+<table><tr><td><div class="element">Relation <b>ICMP_PaddingData (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ICMP_PaddingData : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * ICMP_PaddingData</li></ul><a name="ref1_165644"></a>
+<table><tr><td><div class="element">Attribute <b>ICMP_PaddingLength</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ICMP_PaddingLength : size_t</li><li>C++ : public: size_t ICMP_PaddingLength</li></ul><a name="ref0_138764"></a>
+<table><tr><td><div class="element">Relation <b>DomainTest_Protocol (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DomainTest_Protocol : <a href="class138764.html#ref4_138764"><b>REQUEST_MODE_TEST</b></a></li><li>C++ : public: <a href="class138764.html#ref4_138764"><b>REQUEST_MODE_TEST</b></a> DomainTest_Protocol</li></ul><a name="ref0_138892"></a>
+<table><tr><td><div class="element">Relation <b>DomainTest_ID (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DomainTest_ID : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> DomainTest_ID</li></ul><a name="ref1_165772"></a>
+<table><tr><td><div class="element">Attribute <b>DomainTest_Speed</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + DomainTest_Speed : size_t</li><li>C++ : public: size_t DomainTest_Speed</li></ul><a name="ref0_139020"></a>
+<table><tr><td><div class="element">Relation <b>DomainTest_Data (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + DomainTest_Data : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * DomainTest_Data</li></ul><a name="ref1_165900"></a>
+<table><tr><td><div class="element">Attribute <b>Local_FQDN_String</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Local_FQDN_String : std::string</li><li>C++ : public: std::string * Local_FQDN_String</li></ul><a name="ref0_139148"></a>
+<table><tr><td><div class="element">Relation <b>Local_FQDN_Response (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Local_FQDN_Response : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * Local_FQDN_Response</li></ul><a name="ref1_166028"></a>
+<table><tr><td><div class="element">Attribute <b>Local_FQDN_Length</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Local_FQDN_Length : size_t</li><li>C++ : public: size_t Local_FQDN_Length</li></ul><a name="ref0_139276"></a>
+<table><tr><td><div class="element">Relation <b>LocalServer_Response (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LocalServer_Response : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * LocalServer_Response</li></ul><a name="ref1_166156"></a>
+<table><tr><td><div class="element">Attribute <b>LocalServer_Length</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + LocalServer_Length : size_t</li><li>C++ : public: size_t LocalServer_Length</li></ul><a name="ref1_166284"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Proxy</b></div></td></tr></table>
+<p>[Proxy] block<br /><br /></p><p>Declaration :</p><ul><li>Uml : + SOCKS_Proxy : bool</li><li>C++ : public: bool SOCKS_Proxy</li></ul><a name="ref1_166412"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Version</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Version : size_t</li><li>C++ : public: size_t SOCKS_Version</li></ul><a name="ref0_139404"></a>
+<table><tr><td><div class="element">Relation <b>SOCKS_Protocol_Network (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SOCKS_Protocol_Network : <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a></li><li>C++ : public: <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a> SOCKS_Protocol_Network</li></ul><a name="ref0_139532"></a>
+<table><tr><td><div class="element">Relation <b>SOCKS_Protocol_Transport (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SOCKS_Protocol_Transport : <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a></li><li>C++ : public: <a href="class138252.html#ref4_138252"><b>REQUEST_MODE_TRANSPORT</b></a> SOCKS_Protocol_Transport</li></ul><a name="ref1_166540"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_UDP_NoHandshake</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_UDP_NoHandshake : bool</li><li>C++ : public: bool SOCKS_UDP_NoHandshake</li></ul><a name="ref1_166668"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Only</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Only : bool</li><li>C++ : public: bool SOCKS_Only</li></ul><a name="ref1_166796"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Address_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Address_IPv6 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA SOCKS_Address_IPv6</li></ul><a name="ref1_166924"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Address_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Address_IPv4 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA SOCKS_Address_IPv4</li></ul><a name="ref1_167052"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_TargetServer</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_TargetServer : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA SOCKS_TargetServer</li></ul><a name="ref1_167180"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_TargetDomain</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_TargetDomain : std::string</li><li>C++ : public: std::string * SOCKS_TargetDomain</li></ul><a name="ref0_139660"></a>
+<table><tr><td><div class="element">Relation <b>SOCKS_TargetDomain_Port (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SOCKS_TargetDomain_Port : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> SOCKS_TargetDomain_Port</li></ul><a name="ref1_167308"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Username</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Username : std::string</li><li>C++ : public: std::string * SOCKS_Username</li></ul><a name="ref1_167436"></a>
+<table><tr><td><div class="element">Attribute <b>SOCKS_Password</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SOCKS_Password : std::string</li><li>C++ : public: std::string * SOCKS_Password</li></ul><a name="ref1_167564"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_Proxy</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Proxy : bool</li><li>C++ : public: bool HTTP_CONNECT_Proxy</li></ul><a name="ref0_139788"></a>
+<table><tr><td><div class="element">Relation <b>HTTP_CONNECT_Protocol (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Protocol : <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a></li><li>C++ : public: <a href="class137996.html#ref4_137996"><b>REQUEST_MODE_NETWORK</b></a> HTTP_CONNECT_Protocol</li></ul><a name="ref1_167692"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_Only</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Only : bool</li><li>C++ : public: bool HTTP_CONNECT_Only</li></ul><a name="ref1_167820"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_Address_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Address_IPv6 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA HTTP_CONNECT_Address_IPv6</li></ul><a name="ref1_167948"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_Address_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Address_IPv4 : ADDRESS_UNION_DATA</li><li>C++ : public: ADDRESS_UNION_DATA HTTP_CONNECT_Address_IPv4</li></ul><a name="ref1_168076"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_Handshake</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_Handshake : bool</li><li>C++ : public: bool HTTP_CONNECT_TLS_Handshake</li></ul><a name="ref0_139916"></a>
+<table><tr><td><div class="element">Relation <b>HTTP_CONNECT_TLS_Version (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_Version : <a href="class140044.html#ref4_140044"><b>TLS_VERSION_SELECTION</b></a></li><li>C++ : public: <a href="class140044.html#ref4_140044"><b>TLS_VERSION_SELECTION</b></a> HTTP_CONNECT_TLS_Version</li></ul><a name="ref1_168204"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_Validation</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_Validation : bool</li><li>C++ : public: bool HTTP_CONNECT_TLS_Validation</li></ul><a name="ref1_168332"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_SNI</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_SNI : std::wstring</li><li>C++ : public: std::wstring * HTTP_CONNECT_TLS_SNI</li></ul><a name="ref1_168460"></a>
+<table><tr><td><div class="element">Attribute <b>MBS_HTTP_CONNECT_TLS_SNI</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + MBS_HTTP_CONNECT_TLS_SNI : std::string</li><li>C++ : public: std::string * MBS_HTTP_CONNECT_TLS_SNI</li></ul><a name="ref1_168588"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_AddressString_IPv6</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_AddressString_IPv6 : std::string</li><li>C++ : public: std::string * HTTP_CONNECT_TLS_AddressString_IPv6</li></ul><a name="ref1_168716"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_AddressString_IPv4</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_AddressString_IPv4 : std::string</li><li>C++ : public: std::string * HTTP_CONNECT_TLS_AddressString_IPv4</li></ul><a name="ref1_168844"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TLS_ALPN</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TLS_ALPN : bool</li><li>C++ : public: bool HTTP_CONNECT_TLS_ALPN</li></ul><a name="ref1_168972"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_TargetDomain</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_TargetDomain : std::string</li><li>C++ : public: std::string * HTTP_CONNECT_TargetDomain</li></ul><a name="ref0_140044"></a>
+<table><tr><td><div class="element">Relation <b>HTTP_CONNECT_Version (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_Version : <a href="class139788.html#ref4_139788"><b>HTTP_VERSION_SELECTION</b></a></li><li>C++ : public: <a href="class139788.html#ref4_139788"><b>HTTP_VERSION_SELECTION</b></a> HTTP_CONNECT_Version</li></ul><a name="ref1_169100"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_HeaderField</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_HeaderField : std::string</li><li>C++ : public: std::vector&lt;std::string&gt; * HTTP_CONNECT_HeaderField</li></ul><p>Stereotype: std::vector</p>
+<a name="ref1_169228"></a>
+<table><tr><td><div class="element">Attribute <b>HTTP_CONNECT_ProxyAuthorization</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + HTTP_CONNECT_ProxyAuthorization : std::string</li><li>C++ : public: std::string * HTTP_CONNECT_ProxyAuthorization</li></ul><a name="ref1_169356"></a>
+<table><tr><td><div class="element">Attribute <b>IsDNSCurve</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsDNSCurve : bool</li><li>C++ : public: bool IsDNSCurve</li></ul><a name="ref2_134540"></a>
+<table><tr><td><div class="element">Operation <b>ConfigurationTable</b></div></td></tr></table><p>Member functions<br /></p><p>Declaration :</p><ul><li>Uml : + ConfigurationTable(in  : void) : </li><li>C++ : public: ConfigurationTable(void )</li></ul><a name="ref2_134668"></a>
+<table><tr><td><div class="element">Operation <b>ConfigurationTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ConfigurationTable(in Reference : <a href="class143628.html#ref4_143628"><b>ConfigurationTable</b></a>) : </li><li>C++ : public: ConfigurationTable(const <a href="class143628.html#ref4_143628"><b>ConfigurationTable</b></a> &amp; Reference)</li></ul><a name="ref2_134796"></a>
+<table><tr><td><div class="element">Operation <b>SetToMonitorItem</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SetToMonitorItem(in  : void) : void</li><li>C++ : public: void SetToMonitorItem(void )</li></ul><a name="ref2_134924"></a>
+<table><tr><td><div class="element">Operation <b>MonitorItemToUsing</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MonitorItemToUsing(inout ConfigurationParameter : <a href="class143628.html#ref4_143628"><b>ConfigurationTable</b></a>) : void</li><li>C++ : public: void MonitorItemToUsing(<a href="class143628.html#ref4_143628"><b>ConfigurationTable</b></a> * const ConfigurationParameter)</li></ul><a name="ref2_135052"></a>
+<table><tr><td><div class="element">Operation <b>MonitorItemReset</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + MonitorItemReset(in  : void) : void</li><li>C++ : public: void MonitorItemReset(void )</li></ul><a name="ref2_135180"></a>
+<table><tr><td><div class="element">Operation <b>~ConfigurationTable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ~ConfigurationTable(in  : void) : </li><li>C++ : public: ~ConfigurationTable(void )</li></ul></div>
+<p>All public operations : <a href="class143628.html#ref2_135052"><b>MonitorItemReset</b></a> , <a href="class143628.html#ref2_134924"><b>MonitorItemToUsing</b></a> , <a href="class143628.html#ref2_134796"><b>SetToMonitorItem</b></a> </p>
+</body>
+</html>

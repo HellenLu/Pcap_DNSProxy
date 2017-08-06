@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class bio_method_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class bio_method_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_164876"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct bio_method_st </li></ul><p>Artifact : <a href="index.html#ref8_136588"><b>bio</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_182540"></a>
+<table><tr><td><div class="element">Attribute <b>type</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + type : int</li><li>C++ : public: int type</li></ul><a name="ref1_182668"></a>
+<table><tr><td><div class="element">Attribute <b>name</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + name : char, read only</li><li>C++ : public: const char * name</li></ul><a name="ref1_182796"></a>
+<table><tr><td><div class="element">Attribute <b>bwrite</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bwrite : int (*) (BIO *, const char *, int)</li><li>C++ : public:  int (*bwrite) (BIO *, const char *, int)</li></ul><a name="ref1_182924"></a>
+<table><tr><td><div class="element">Attribute <b>bread</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bread : int (*) (BIO *, char *, int)</li><li>C++ : public:  int (*bread) (BIO *, char *, int)</li></ul><a name="ref1_183052"></a>
+<table><tr><td><div class="element">Attribute <b>bputs</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bputs : int (*) (BIO *, const char *)</li><li>C++ : public:  int (*bputs) (BIO *, const char *)</li></ul><a name="ref1_183180"></a>
+<table><tr><td><div class="element">Attribute <b>bgets</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bgets : int (*) (BIO *, char *, int)</li><li>C++ : public:  int (*bgets) (BIO *, char *, int)</li></ul><a name="ref1_183308"></a>
+<table><tr><td><div class="element">Attribute <b>ctrl</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ctrl : long (*) (BIO *, int, long, void *)</li><li>C++ : public:  long (*ctrl) (BIO *, int, long, void *)</li></ul><a name="ref1_183436"></a>
+<table><tr><td><div class="element">Attribute <b>create</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + create : int (*) (BIO *)</li><li>C++ : public:  int (*create) (BIO *)</li></ul><a name="ref1_183564"></a>
+<table><tr><td><div class="element">Attribute <b>destroy</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + destroy : int (*) (BIO *)</li><li>C++ : public:  int (*destroy) (BIO *)</li></ul><a name="ref1_183692"></a>
+<table><tr><td><div class="element">Attribute <b>callback_ctrl</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + callback_ctrl : long (*) (BIO *, int, bio_info_cb *)</li><li>C++ : public:  long (*callback_ctrl) (BIO *, int, bio_info_cb *)</li></ul></div>
+</body>
+</html>

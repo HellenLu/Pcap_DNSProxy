@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ENGINE_CMD_DEFN_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ENGINE_CMD_DEFN_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_180108"></a>
+<p>This prevents the initialisation function from providing mutex<br />callbacks to the nCipher library.<br /><br /><br />If an ENGINE supports its own specific control commands and wishes the<br />framework to handle the above 'ENGINE_CMD_***'-manipulation commands on<br />its behalf, it should supply a null-terminated array of ENGINE_CMD_DEFN<br />entries to ENGINE_set_cmd_defns(). It should also implement a ctrl()<br />handler that supports the stated commands (ie. the "cmd_num" entries as<br />described by the array). NB: The array must be ordered in increasing order<br />of cmd_num. "null-terminated" means that the last ENGINE_CMD_DEFN element<br />has cmd_num set to zero and/or cmd_name set to NULL.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct ENGINE_CMD_DEFN_st </li></ul><p>Artifact : <a href="index.html#ref8_139532"><b>engine</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_197004"></a>
+<table><tr><td><div class="element">Attribute <b>cmd_num</b></div></td></tr></table>
+<p> The command number <br /></p><p>Declaration :</p><ul><li>Uml : + cmd_num : uint</li><li>C++ : public: unsigned int cmd_num</li></ul><a name="ref1_197132"></a>
+<table><tr><td><div class="element">Attribute <b>cmd_name</b></div></td></tr></table>
+<p> The command name itself <br /></p><p>Declaration :</p><ul><li>Uml : + cmd_name : char, read only</li><li>C++ : public: const char * cmd_name</li></ul><a name="ref1_197260"></a>
+<table><tr><td><div class="element">Attribute <b>cmd_desc</b></div></td></tr></table>
+<p> A short description of the command <br /></p><p>Declaration :</p><ul><li>Uml : + cmd_desc : char, read only</li><li>C++ : public: const char * cmd_desc</li></ul><a name="ref1_197388"></a>
+<table><tr><td><div class="element">Attribute <b>cmd_flags</b></div></td></tr></table>
+<p> The input the command expects <br /></p><p>Declaration :</p><ul><li>Uml : + cmd_flags : uint</li><li>C++ : public: unsigned int cmd_flags</li></ul></div>
+</body>
+</html>

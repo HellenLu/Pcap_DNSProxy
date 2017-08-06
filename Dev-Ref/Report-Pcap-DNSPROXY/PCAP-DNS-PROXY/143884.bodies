@@ -1,0 +1,357 @@
+class GlobalStatus
+!!!135308.cpp!!!	GlobalStatus(in  : void)
+	memset(this, 0, sizeof(GLOBAL_STATUS));
+	try {
+		LocalListeningSocket = new std::vector<SYSTEM_SOCKET>();
+		RamdomEngine = new std::default_random_engine();
+		ThreadRunningNum = new std::atomic<size_t>();
+		ThreadRunningFreeNum = new std::atomic<size_t>();
+		Path_Global = new std::vector<std::wstring>();
+		Path_ErrorLog = new std::wstring();
+		FileList_Hosts = new std::vector<std::wstring>();
+		FileList_IPFilter = new std::vector<std::wstring>();
+	#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+		MBS_Path_Global = new std::vector<std::string>();
+		MBS_Path_ErrorLog = new std::string();
+		MBS_FileList_Hosts = new std::vector<std::string>();
+		MBS_FileList_IPFilter = new std::vector<std::string>();
+	#endif
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6] = new uint8_t[NORMAL_PACKET_MAXSIZE]();
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4] = new uint8_t[NORMAL_PACKET_MAXSIZE]();
+	#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = new std::vector<std::string>();
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = new std::vector<std::string>();
+	#endif
+	}
+	catch (std::bad_alloc)
+	{
+		delete LocalListeningSocket;
+		delete RamdomEngine;
+		delete ThreadRunningNum;
+		delete ThreadRunningFreeNum;
+		delete Path_Global;
+		delete Path_ErrorLog;
+		delete FileList_Hosts;
+		delete FileList_IPFilter;
+		LocalListeningSocket = nullptr;
+		RamdomEngine = nullptr;
+		Path_Global = nullptr;
+		Path_ErrorLog = nullptr;
+		FileList_Hosts = nullptr;
+		FileList_IPFilter = nullptr;
+	#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+		delete MBS_Path_Global;
+		delete MBS_Path_ErrorLog;
+		delete MBS_FileList_Hosts;
+		delete MBS_FileList_IPFilter;
+		MBS_Path_Global = nullptr;
+		MBS_Path_ErrorLog = nullptr;
+		MBS_FileList_Hosts = nullptr;
+		MBS_FileList_IPFilter = nullptr;
+	#endif
+		delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6];
+		delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4];
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+	#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6];
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4];
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+	#endif
+
+	//Exit process.
+		exit(EXIT_FAILURE);
+//		return;
+	}
+
+//GlobalStatus settings
+	GlobalStatusSetting(this);
+	return;
+!!!135436.cpp!!!	GlobalStatus(in Reference : GlobalStatus)
+//Check itself.
+	if (this == &Reference)
+		return;
+
+//Class constructor
+	memset(this, 0, sizeof(GLOBAL_STATUS));
+	try {
+		LocalListeningSocket = new std::vector<SYSTEM_SOCKET>();
+		RamdomEngine = new std::default_random_engine();
+		ThreadRunningNum = new std::atomic<size_t>();
+		ThreadRunningFreeNum = new std::atomic<size_t>();
+		Path_Global = new std::vector<std::wstring>();
+		Path_ErrorLog = new std::wstring();
+		FileList_Hosts = new std::vector<std::wstring>();
+		FileList_IPFilter = new std::vector<std::wstring>();
+	#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+		MBS_Path_Global = new std::vector<std::string>();
+		MBS_Path_ErrorLog = new std::string();
+		MBS_FileList_Hosts = new std::vector<std::string>();
+		MBS_FileList_IPFilter = new std::vector<std::string>();
+	#endif
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6] = new uint8_t[NORMAL_PACKET_MAXSIZE]();
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4] = new uint8_t[NORMAL_PACKET_MAXSIZE]();
+	#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = new std::vector<std::string>();
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = new std::vector<std::string>();
+	#endif
+	}
+	catch (std::bad_alloc)
+	{
+		delete LocalListeningSocket;
+		delete RamdomEngine;
+		delete ThreadRunningNum;
+		delete ThreadRunningFreeNum;
+		delete Path_Global;
+		delete Path_ErrorLog;
+		delete FileList_Hosts;
+		delete FileList_IPFilter;
+		LocalListeningSocket = nullptr;
+		RamdomEngine = nullptr;
+		Path_Global = nullptr;
+		Path_ErrorLog = nullptr;
+		FileList_Hosts = nullptr;
+		FileList_IPFilter = nullptr;
+	#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+		delete MBS_Path_Global;
+		delete MBS_Path_ErrorLog;
+		delete MBS_FileList_Hosts;
+		delete MBS_FileList_IPFilter;
+		MBS_Path_Global = nullptr;
+		MBS_Path_ErrorLog = nullptr;
+		MBS_FileList_Hosts = nullptr;
+		MBS_FileList_IPFilter = nullptr;
+	#endif
+		delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6];
+		delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4];
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+		LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+	#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6];
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4];
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+	#endif
+
+	//Exit process.
+		exit(EXIT_FAILURE);
+//		return;
+	}
+
+//GlobalStatus settings
+	GlobalStatusSetting(this);
+
+//Copy constructor
+#if defined(PLATFORM_WIN)
+	IsInitialized_WinSock = Reference.IsInitialized_WinSock;
+	Initialized_MutexHandle = Reference.Initialized_MutexHandle;
+	Initialized_MutexSecurityAttributes = Reference.Initialized_MutexSecurityAttributes;
+	Initialized_MutexSecurityDescriptor = Reference.Initialized_MutexSecurityDescriptor;
+#elif (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+#if defined(ENABLE_TLS)
+	IsInitialized_OpenSSL = Reference.IsInitialized_OpenSSL;
+#endif
+	Initialized_MutexHandle = Reference.Initialized_MutexHandle;
+#endif
+	StartupTime = Reference.StartupTime;
+#if defined(PLATFORM_WIN)
+	IsConsole = Reference.IsConsole;
+#elif defined(PLATFORM_LINUX)
+	IsDaemon = Reference.IsDaemon;
+#endif
+	GatewayAvailable_IPv6 = Reference.GatewayAvailable_IPv6;
+	GatewayAvailable_IPv4 = Reference.GatewayAvailable_IPv4;
+	LocalAddress_Length[NETWORK_LAYER_TYPE_IPV6] = Reference.LocalAddress_Length[NETWORK_LAYER_TYPE_IPV6];
+	LocalAddress_Length[NETWORK_LAYER_TYPE_IPV4] = Reference.LocalAddress_Length[NETWORK_LAYER_TYPE_IPV4];
+	if (Reference.LocalListeningSocket != nullptr)
+	{
+		*LocalListeningSocket = *Reference.LocalListeningSocket;
+	}
+	else {
+		delete LocalListeningSocket;
+		LocalListeningSocket = nullptr;
+	}
+	if (Reference.RamdomEngine != nullptr)
+	{
+		*RamdomEngine = *Reference.RamdomEngine;
+	}
+	else {
+		delete RamdomEngine;
+		RamdomEngine = nullptr;
+	}
+	ThreadRunningNum->store(*Reference.ThreadRunningNum);
+	ThreadRunningFreeNum->store(*Reference.ThreadRunningFreeNum);
+	if (Reference.Path_Global != nullptr)
+	{
+		*Path_Global = *Reference.Path_Global;
+	}
+	else {
+		delete Path_Global;
+		Path_Global = nullptr;
+	}
+	if (Reference.Path_ErrorLog != nullptr)
+	{
+		*Path_ErrorLog = *Reference.Path_ErrorLog;
+	}
+	else {
+		delete Path_ErrorLog;
+		Path_ErrorLog = nullptr;
+	}
+	if (Reference.FileList_Hosts != nullptr)
+	{
+		*FileList_Hosts = *Reference.FileList_Hosts;
+	}
+	else {
+		delete FileList_Hosts;
+		FileList_Hosts = nullptr;
+	}
+	if (Reference.FileList_IPFilter != nullptr)
+	{
+		*FileList_IPFilter = *Reference.FileList_IPFilter;
+	}
+	else {
+		delete FileList_IPFilter;
+		FileList_IPFilter = nullptr;
+	}
+#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+	if (Reference.MBS_Path_Global != nullptr)
+	{
+		*MBS_Path_Global = *Reference.MBS_Path_Global;
+	}
+	else {
+		delete MBS_Path_Global;
+		MBS_Path_Global = nullptr;
+	}
+	if (Reference.MBS_Path_ErrorLog != nullptr)
+	{
+		*MBS_Path_ErrorLog = *Reference.MBS_Path_ErrorLog;
+	}
+	else {
+		delete MBS_Path_ErrorLog;
+		MBS_Path_ErrorLog = nullptr;
+	}
+	if (Reference.MBS_FileList_Hosts != nullptr)
+	{
+		*MBS_FileList_Hosts = *Reference.MBS_FileList_Hosts;
+	}
+	else {
+		delete MBS_FileList_Hosts;
+		MBS_FileList_Hosts = nullptr;
+	}
+	if (Reference.MBS_FileList_IPFilter != nullptr)
+	{
+		*MBS_FileList_IPFilter = *Reference.MBS_FileList_IPFilter;
+	}
+	else {
+		delete MBS_FileList_IPFilter;
+		MBS_FileList_IPFilter = nullptr;
+	}
+#endif
+	memcpy_s(LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6], NORMAL_PACKET_MAXSIZE, Reference.LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6], NORMAL_PACKET_MAXSIZE);
+	memcpy_s(LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4], NORMAL_PACKET_MAXSIZE, Reference.LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4], NORMAL_PACKET_MAXSIZE);
+#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+	if (Reference.LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] != nullptr)
+	{
+		*LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = *Reference.LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6];
+	}
+	else {
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6];
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+	}
+	if (Reference.LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] != nullptr)
+	{
+		*LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = *Reference.LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4];
+	}
+	else {
+		delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4];
+		LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+	}
+#endif
+	ConfigFileModifiedTime = Reference.ConfigFileModifiedTime;
+
+	return;
+!!!135564.cpp!!!	~GlobalStatus(in  : void)
+//Close all sockets.
+	for (auto &SocketIter:*LocalListeningSocket)
+		SocketSetting(SocketIter, SOCKET_SETTING_TYPE::CLOSE, false, nullptr);
+
+#if defined(PLATFORM_WIN)
+//WinSock cleanup
+	if (IsInitialized_WinSock)
+	{
+		WSACleanup();
+		IsInitialized_WinSock = false;
+	}
+
+//Mutex handle cleanup
+	if (Initialized_MutexHandle != nullptr)
+	{
+		ReleaseMutex(Initialized_MutexHandle);
+		CloseHandle(Initialized_MutexHandle);
+		Initialized_MutexHandle = nullptr;
+	}
+
+//Close all file handles.
+	_fcloseall();
+#elif (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+//Mutex handle cleanup
+	if (Initialized_MutexHandle != 0 && Initialized_MutexHandle != RETURN_ERROR)
+	{
+		flock(Initialized_MutexHandle, LOCK_UN);
+		close(Initialized_MutexHandle);
+		Initialized_MutexHandle = 0;
+	}
+
+//Free all OpenSSL libraries
+#if defined(ENABLE_TLS)
+#if OPENSSL_VERSION_NUMBER < OPENSSL_VERSION_1_1_0 //OpenSSL version brfore 1.1.0
+	if (IsInitialized_OpenSSL)
+	{
+		OpenSSL_Library_Init(false);
+		IsInitialized_OpenSSL = false;
+	}
+#endif
+#endif
+
+//Close all file handles.
+#if (defined(PLATFORM_LINUX) && !defined(PLATFORM_OPENWRT))
+	fcloseall();
+#endif
+#endif
+
+//Delete and reset pointers.
+	delete LocalListeningSocket;
+	delete RamdomEngine;
+	delete Path_Global;
+	delete Path_ErrorLog;
+	delete FileList_Hosts;
+	delete FileList_IPFilter;
+	LocalListeningSocket = nullptr;
+	RamdomEngine = nullptr;
+	Path_Global = nullptr;
+	Path_ErrorLog = nullptr;
+	FileList_Hosts = nullptr;
+	FileList_IPFilter = nullptr;
+#if (defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS))
+	delete MBS_Path_Global;
+	delete MBS_Path_ErrorLog;
+	delete MBS_FileList_Hosts;
+	delete MBS_FileList_IPFilter;
+	MBS_Path_Global = nullptr;
+	MBS_Path_ErrorLog = nullptr;
+	MBS_FileList_Hosts = nullptr;
+	MBS_FileList_IPFilter = nullptr;
+#endif
+	delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6];
+	delete[] LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4];
+	LocalAddress_Response[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+	LocalAddress_Response[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+#if (defined(PLATFORM_WIN) || defined(PLATFORM_LINUX))
+	delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6];
+	delete LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4];
+	LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV6] = nullptr;
+	LocalAddress_PointerResponse[NETWORK_LAYER_TYPE_IPV4] = nullptr;
+#endif
+
+	return;
