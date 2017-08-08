@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class dynamic_v_check_fn</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class dynamic_v_check_fn</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_182412"></a>
+<p>The version checking function should be of this prototype. NB: The<br />ossl_version value passed in is the OSSL_DYNAMIC_VERSION of the loading<br />code. If this function returns zero, it indicates a (potential) version<br />incompatibility and the loaded library doesn't believe it can proceed.<br />Otherwise, the returned value is the (latest) version supported by the<br />loading library. The loader may still decide that the loaded code's<br />version is unsatisfactory and could veto the load. The function is<br />expected to be implemented with the symbol name "v_check", and a default<br />implementation can be fully instantiated with<br />IMPLEMENT_DYNAMIC_CHECK_FN().<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef unsigned long(*  dynamic_v_check_fn) (unsigned long ossl_version); </li></ul><p>Artifact : <a href="index.html#ref8_139532"><b>engine</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

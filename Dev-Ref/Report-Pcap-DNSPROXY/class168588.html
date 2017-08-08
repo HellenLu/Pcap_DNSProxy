@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ASN1_ITEM_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ASN1_ITEM_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_168588"></a>
+<p> This is the actual ASN1 item itself <br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct ASN1_ITEM_st </li></ul><p>Artifact : <a href="index.html#ref8_137484"><b>asn1t</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_187532"></a>
+<table><tr><td><div class="element">Attribute <b>itype</b></div></td></tr></table>
+<p> The item type, primitive, SEQUENCE, CHOICE<br />or extern <br /></p><p>Declaration :</p><ul><li>Uml : + itype : char</li><li>C++ : public: char itype</li></ul><a name="ref1_187660"></a>
+<table><tr><td><div class="element">Attribute <b>utype</b></div></td></tr></table>
+<p> underlying type <br /></p><p>Declaration :</p><ul><li>Uml : + utype : long</li><li>C++ : public: long utype</li></ul><a name="ref1_187788"></a>
+<table><tr><td><div class="element">Attribute <b>templates</b></div></td></tr></table>
+<p> If SEQUENCE or CHOICE this contains<br />the contents <br /></p><p>Declaration :</p><ul><li>Uml : + templates : ASN1_TEMPLATE, read only</li><li>C++ : public: const ASN1_TEMPLATE * templates</li></ul><a name="ref1_187916"></a>
+<table><tr><td><div class="element">Attribute <b>tcount</b></div></td></tr></table>
+<p> Number of templates if SEQUENCE or CHOICE <br /></p><p>Declaration :</p><ul><li>Uml : + tcount : long</li><li>C++ : public: long tcount</li></ul><a name="ref1_188044"></a>
+<table><tr><td><div class="element">Attribute <b>funcs</b></div></td></tr></table>
+<p> functions that handle this type <br /></p><p>Declaration :</p><ul><li>Uml : + funcs : void, read only</li><li>C++ : public: const void * funcs</li></ul><a name="ref1_188172"></a>
+<table><tr><td><div class="element">Attribute <b>size</b></div></td></tr></table>
+<p> Structure size (usually) <br /></p><p>Declaration :</p><ul><li>Uml : + size : long</li><li>C++ : public: long size</li></ul><a name="ref1_188300"></a>
+<table><tr><td><div class="element">Attribute <b>sname</b></div></td></tr></table>
+<p> Structure name <br /></p><p>Declaration :</p><ul><li>Uml : + sname : char, read only</li><li>C++ : public: const char * sname</li></ul></div>
+</body>
+</html>

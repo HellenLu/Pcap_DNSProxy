@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _ieee_1394_hdr_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _ieee_1394_hdr_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_148748"></a>
+<p> Apple IEEE 1394/FireWire header<br />IEEE 1394-1995, IEEE Standard for a High Performance Serial Bus(https://standards.ieee.org/findstds/standard/1394-1995.html)<br />RFC 2734, IPv4 over IEEE 1394(https://tools.ietf.org/html/rfc2734)<br />RFC 3146, Transmission of IPv6 Packets over IEEE 1394 Networks(https://tools.ietf.org/html/rfc3146)<br /><br />1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3<br />0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                      Destination Address                      |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                        Source Address                         |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|             Type              |                               /<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                               /<br />/                                                               /<br />/                             Data                              /<br />/                                                               /<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _ieee_1394_hdr_ </li></ul><p>Artifact : <a href="index.html#ref8_134796"><b>Structure</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_145036"></a>
+<table><tr><td><div class="element">Relation <b>Dst (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Dst : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a>, multiplicity : [8U]</li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> Dst[8U]</li></ul><a name="ref0_145164"></a>
+<table><tr><td><div class="element">Relation <b>Src (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Src : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a>, multiplicity : [8U]</li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> Src[8U]</li></ul><a name="ref0_145292"></a>
+<table><tr><td><div class="element">Relation <b>Type (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Type : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> Type</li></ul></div>
+</body>
+</html>

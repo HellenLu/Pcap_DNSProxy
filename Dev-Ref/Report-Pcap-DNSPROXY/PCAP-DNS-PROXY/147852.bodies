@@ -1,0 +1,14 @@
+class SSPIHandleTable
+!!!137868.cpp!!!	SSPIHandleTable(in  : void)
+	memset(&ClientCredentials, 0, sizeof(ClientCredentials));
+	memset(&ContextHandle, 0, sizeof(ContextHandle));
+	InputFlags = 0;
+	memset(&StreamSizes, 0, sizeof(StreamSizes));
+	LastReturnValue = 0;
+
+	return;
+!!!137996.cpp!!!	~SSPIHandleTable(in  : void)
+	FreeCredentialsHandle(&ClientCredentials);
+	DeleteSecurityContext(&ContextHandle);
+
+	return;

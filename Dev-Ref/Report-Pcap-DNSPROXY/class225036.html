@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pcap_send_queue</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pcap_send_queue</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_225036"></a>
+<p> Definitions <br />!<br />\brief A queue of raw packets that will be sent to the network with pcap_sendqueue_transmit().<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pcap_send_queue </li></ul><p>Artifact : <a href="index.html#ref8_144652"><b>Win32-Extensions</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_223884"></a>
+<table><tr><td><div class="element">Attribute <b>maxlen</b></div></td></tr></table>
+<p>/< Maximum size of the the queue, in bytes. This variable contains the size of the buffer field.<br /></p><p>Declaration :</p><ul><li>Uml : + maxlen : u_int</li><li>C++ : public: u_int maxlen</li></ul><a name="ref1_224012"></a>
+<table><tr><td><div class="element">Attribute <b>len</b></div></td></tr></table>
+<p>/< Current size of the queue, in bytes.<br /></p><p>Declaration :</p><ul><li>Uml : + len : u_int</li><li>C++ : public: u_int len</li></ul><a name="ref1_224140"></a>
+<table><tr><td><div class="element">Attribute <b>buffer</b></div></td></tr></table>
+<p>/< Buffer containing the packets to be sent.<br /></p><p>Declaration :</p><ul><li>Uml : + buffer : char</li><li>C++ : public: char * buffer</li></ul></div>
+</body>
+</html>

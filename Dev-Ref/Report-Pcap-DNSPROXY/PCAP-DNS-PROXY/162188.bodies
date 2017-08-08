@@ -1,0 +1,45 @@
+class DNSCurveHeapBufferTable
+!!!138380.cpp!!!	DNSCurveHeapBufferTable(in  : void)
+	Buffer = nullptr;
+	BufferSize = 0;
+
+	return;
+!!!138508.cpp!!!	DNSCurveHeapBufferTable(in Size : size_t)
+	Buffer = reinterpret_cast<Ty *>(sodium_malloc(Size));
+	if (Buffer != nullptr)
+	{
+		sodium_memzero(Buffer, Size);
+		BufferSize = Size;
+	}
+	else {
+		exit(EXIT_FAILURE);
+	}
+
+	return;
+!!!138636.cpp!!!	DNSCurveHeapBufferTable(in Count : size_t, in Size : size_t)
+	Buffer = reinterpret_cast<Ty *>(sodium_allocarray(Count, Size));
+	if (Buffer != nullptr)
+	{
+		sodium_memzero(Buffer, Count * Size);
+		BufferSize = Count * Size;
+	}
+	else {
+		exit(EXIT_FAILURE);
+	}
+
+	return;
+!!!138764.cpp!!!	Swap(inout Other : DNSCurveHeapBufferTable) : void
+	const auto BufferTemp = Buffer;
+	Buffer = Other.Buffer;
+	Other.Buffer = BufferTemp;
+	const auto BufferSizeTemp = BufferSize;
+	BufferSize = Other.BufferSize;
+	Other.BufferSize = BufferSizeTemp;
+
+	return;
+!!!138892.cpp!!!	~DNSCurveHeapBufferTable(in  : void)
+	sodium_free(Buffer);
+	Buffer = nullptr;
+	BufferSize = 0;
+
+	return;

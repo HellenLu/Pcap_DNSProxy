@@ -1,0 +1,19 @@
+class OpenSSLContextTable
+!!!138124.cpp!!!	OpenSSLContextTable(in  : void)
+	MethodContext = nullptr;
+	SessionBIO = nullptr;
+	SessionData = nullptr;
+	Protocol_Network = 0;
+	Protocol_Transport = 0;
+	Socket = INVALID_SOCKET;
+
+	return;
+!!!138252.cpp!!!	~OpenSSLContextTable(in  : void)
+	if (SessionBIO != nullptr)
+		BIO_free_all(SessionBIO);
+	if (MethodContext != nullptr)
+		SSL_CTX_free(MethodContext);
+	if (SocketSetting(Socket, SOCKET_SETTING_TYPE::INVALID_CHECK, false, nullptr))
+		SocketSetting(Socket, SOCKET_SETTING_TYPE::CLOSE, false, nullptr);
+
+	return;

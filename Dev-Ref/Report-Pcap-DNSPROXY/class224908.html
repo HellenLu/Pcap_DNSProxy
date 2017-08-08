@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class pcap_samp</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class pcap_samp</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_224908"></a>
+<p>!<br />\brief This structure defines the information related to sampling.<br /><br />In case the sampling is requested, the capturing device should read<br />only a subset of the packets coming from the source. The returned packets depend<br />on the sampling parameters.<br /><br />\warning The sampling process is applied <strong>after</strong> the filtering process.<br />In other words, packets are filtered first, then the sampling process selects a<br />subset of the 'filtered' packets and it returns them to the caller.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct pcap_samp </li></ul><p>Artifact : <a href="index.html#ref8_144524"><b>remote-ext</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_223628"></a>
+<table><tr><td><div class="element">Attribute <b>method</b></div></td></tr></table>
+<p>!<br />Method used for sampling. Currently, the supported methods are listed in the<br />\link remote_samp_methods Sampling Methods Section\endlink.<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + method : int</li><li>C++ : public: int method</li></ul><a name="ref1_223756"></a>
+<table><tr><td><div class="element">Attribute <b>value</b></div></td></tr></table>
+<p>!<br />This value depends on the sampling method defined. For its meaning, please check<br />at the \link remote_samp_methods Sampling Methods Section\endlink.<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + value : int</li><li>C++ : public: int value</li></ul></div>
+</body>
+</html>

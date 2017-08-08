@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ASN1_ENCODING_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ASN1_ENCODING_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_166796"></a>
+<p>ASN1_ENCODING structure: this is used to save the received encoding of an<br />ASN1 type. This is useful to get round problems with invalid encodings<br />which can break signatures.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct ASN1_ENCODING_st </li></ul><p>Artifact : <a href="index.html#ref8_137356"><b>asn1</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_184972"></a>
+<table><tr><td><div class="element">Attribute <b>enc</b></div></td></tr></table>
+<p> DER encoding <br /></p><p>Declaration :</p><ul><li>Uml : + enc : byte</li><li>C++ : public: unsigned char * enc</li></ul><a name="ref1_185100"></a>
+<table><tr><td><div class="element">Attribute <b>len</b></div></td></tr></table>
+<p> Length of encoding <br /></p><p>Declaration :</p><ul><li>Uml : + len : long</li><li>C++ : public: long len</li></ul><a name="ref1_185228"></a>
+<table><tr><td><div class="element">Attribute <b>modified</b></div></td></tr></table>
+<p> set to 1 if 'enc' is invalid <br /></p><p>Declaration :</p><ul><li>Uml : + modified : int</li><li>C++ : public: int modified</li></ul></div>
+</body>
+</html>

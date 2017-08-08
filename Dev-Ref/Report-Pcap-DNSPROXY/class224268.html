@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _PACKET_OID_DATA</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _PACKET_OID_DATA</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_224268"></a>
+<p>!<br />\brief Structure containing an OID request.<br /><br />It is used by the PacketRequest() function to send an OID to the interface card driver. <br />It can be used, for example, to retrieve the status of the error counters on the adapter, its MAC address, <br />the list of the multicast groups defined on it, and so on.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _PACKET_OID_DATA </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_222860"></a>
+<table><tr><td><div class="element">Attribute <b>Oid</b></div></td></tr></table>
+<p>/< OID code. See the Microsoft DDK documentation or the file ntddndis.h<br /></p><p>Declaration :</p><ul><li>Uml : + Oid : ULONG</li><li>C++ : public: ULONG Oid</li></ul><a name="ref1_222988"></a>
+<table><tr><td><div class="element">Attribute <b>Length</b></div></td></tr></table>
+<p>/< for a complete list of valid codes.<br />/< Length of the data field<br /></p><p>Declaration :</p><ul><li>Uml : + Length : ULONG</li><li>C++ : public: ULONG Length</li></ul><a name="ref1_223116"></a>
+<table><tr><td><div class="element">Attribute <b>Data</b></div></td></tr></table>
+<p>/< variable-lenght field that contains the information passed to or received <br /></p><p>Declaration :</p><ul><li>Uml : + Data : UCHAR, multiplicity : [1]</li><li>C++ : public: UCHAR Data[1]</li></ul></div>
+</body>
+</html>

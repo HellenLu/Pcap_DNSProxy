@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DSO_MERGER_FUNC</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DSO_MERGER_FUNC</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_166284"></a>
+<p>The function prototype used for method functions (or caller-provided<br />callbacks) that merge two file specifications. They are passed a DSO<br />structure pointer (or NULL if they are to be used independently of a DSO<br />object) and two file specifications to merge. They should either return<br />NULL (if there is an error condition) or a newly allocated string<br />containing the result of merging that the caller will need to free with<br />OPENSSL_free() when done. Here, merging means that bits and pieces are<br />taken from each of the file specifications and added together in whatever<br />fashion that is sensible for the DSO method in question.  The only rule<br />that really applies is that if the two specification contain pieces of the<br />same type, the copy from the first string takes priority.  One could see<br />it as the first specification is the one given by the user and the second<br />being a bunch of defaults to add on if they're missing in the first.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef char*(*  DSO_MERGER_FUNC)(DSO *, const char *, const char *); </li></ul><p>Artifact : <a href="index.html#ref8_136972"><b>dso</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

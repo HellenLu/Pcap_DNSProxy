@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ASN1_aux_cb</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ASN1_aux_cb</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_170252"></a>
+<p>This is the ASN1_AUX structure: it handles various miscellaneous<br />requirements. For example the use of reference counts and an informational<br />callback. The "informational callback" is called at various points during<br />the ASN1 encoding and decoding. It can be used to provide minor<br />customisation of the structures used. This is most useful where the<br />supplied routines *almost* do the right thing but need some extra help at<br />a few points. If the callback returns zero then it is assumed a fatal<br />error has occurred and the main operation should be abandoned. If major<br />changes in the default behaviour are required then an external type is<br />more appropriate.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef int ASN1_aux_cb(int operation, ASN1_VALUE **in, const ASN1_ITEM *it, void *exarg); </li></ul><p>Artifact : <a href="index.html#ref8_137484"><b>asn1t</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

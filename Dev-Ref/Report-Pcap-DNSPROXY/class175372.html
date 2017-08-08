@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class conf_method_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class conf_method_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_175372"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct conf_method_st </li></ul><p>Artifact : <a href="index.html#ref8_138636"><b>conf</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_192780"></a>
+<table><tr><td><div class="element">Attribute <b>name</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + name : char, read only</li><li>C++ : public: const char * name</li></ul><a name="ref1_192908"></a>
+<table><tr><td><div class="element">Attribute <b>create</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + create : CONF *(*) (CONF_METHOD *meth)</li><li>C++ : public:  CONF *(*create) (CONF_METHOD *meth)</li></ul><a name="ref1_193036"></a>
+<table><tr><td><div class="element">Attribute <b>init</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + init : int (*) (CONF *conf)</li><li>C++ : public:  int (*init) (CONF *conf)</li></ul><a name="ref1_193164"></a>
+<table><tr><td><div class="element">Attribute <b>destroy</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + destroy : int (*) (CONF *conf)</li><li>C++ : public:  int (*destroy) (CONF *conf)</li></ul><a name="ref1_193292"></a>
+<table><tr><td><div class="element">Attribute <b>destroy_data</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + destroy_data : int (*) (CONF *conf)</li><li>C++ : public:  int (*destroy_data) (CONF *conf)</li></ul><a name="ref1_193420"></a>
+<table><tr><td><div class="element">Attribute <b>load_bio</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + load_bio : int (*) (CONF *conf, BIO *bp, long *eline)</li><li>C++ : public:  int (*load_bio) (CONF *conf, BIO *bp, long *eline)</li></ul><a name="ref1_193548"></a>
+<table><tr><td><div class="element">Attribute <b>dump</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + dump : int (*) (const CONF *conf, BIO *bp)</li><li>C++ : public:  int (*dump) (const CONF *conf, BIO *bp)</li></ul><a name="ref1_193676"></a>
+<table><tr><td><div class="element">Attribute <b>is_number</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + is_number : int (*) (const CONF *conf, char c)</li><li>C++ : public:  int (*is_number) (const CONF *conf, char c)</li></ul><a name="ref1_193804"></a>
+<table><tr><td><div class="element">Attribute <b>to_int</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + to_int : int (*) (const CONF *conf, char c)</li><li>C++ : public:  int (*to_int) (const CONF *conf, char c)</li></ul><a name="ref1_193932"></a>
+<table><tr><td><div class="element">Attribute <b>load</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + load : int (*) (CONF *conf, const char *name, long *eline)</li><li>C++ : public:  int (*load) (CONF *conf, const char *name, long *eline)</li></ul></div>
+</body>
+</html>

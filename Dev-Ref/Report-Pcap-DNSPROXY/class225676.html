@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class bpf_version</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class bpf_version</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_225676"></a>
+<p>Struct return by BIOCVERSION.  This represents the version number of <br />the filter language described by the instruction encodings below.<br />bpf understands a program iff kernel_major == filter_major &&<br />kernel_minor >= filter_minor, that is, if the value returned by the<br />running kernel has the same major number and a minor number equal<br />equal to or less than the filter being downloaded.  Otherwise, the<br />results are undefined, meaning an error may be returned or packets<br />may be accepted haphazardly.<br />It has nothing to do with the source code version.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct bpf_version </li></ul><p>Artifact : <a href="index.html#ref8_144908"><b>bpf</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_224268"></a>
+<table><tr><td><div class="element">Attribute <b>bv_major</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bv_major : u_short</li><li>C++ : public: u_short bv_major</li></ul><a name="ref1_224396"></a>
+<table><tr><td><div class="element">Attribute <b>bv_minor</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + bv_minor : u_short</li><li>C++ : public: u_short bv_minor</li></ul></div>
+</body>
+</html>

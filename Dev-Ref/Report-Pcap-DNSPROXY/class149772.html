@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _ipv6_hdr_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _ipv6_hdr_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_149772"></a>
+<p> Internet Protocol version 6/IPv6 header<br />RFC 2460, Internet Protocol, Version 6 (IPv6) Specification(https://tools.ietf.org/html/rfc2460)<br /><br />1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3<br />0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|Version|    DSF    |T|E|              Flow Label               |  DSF/Differentiated Services Field, E/ECT/Explicit Congestion Notification - Capable Transport, T/ECN-CE/Explicit Congestion Notification - Congestion Encountered<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />\Traffic Class/<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|        Payload Length         |  Next Header  |   Hop Limit   |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                                                               |<br />|                        Source Address                         |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                                                               |<br />|                      Destination Address                      |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _ipv6_hdr_ </li></ul><p>Artifact : <a href="index.html#ref8_134796"><b>Structure</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_146316"></a>
+<table><tr><td><div class="element">Relation <b>VerTcFlow (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + VerTcFlow : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> VerTcFlow</li></ul><a name="ref1_179724"></a>
+<table><tr><td><div class="element">Attribute <b>VerTcFlowBits</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + VerTcFlowBits : &lt;complex type&gt;</li><li>C++ : public: struct   { #if BYTE_ORDER == LITTLE_ENDIAN union { uint8_t        TrafficClass_First:4</li></ul></div>
+</body>
+</html>

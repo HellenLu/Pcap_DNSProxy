@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DNSCurveSocketSelectingTable</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DNSCurveSocketSelectingTable</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_147596"></a>
+<p>DNSCurve Socket Selecting table class<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct DNSCurveSocketSelectingTable </li></ul><p>Artifact : <a href="index.html#ref8_134668"><b>Definition</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_143756"></a>
+<table><tr><td><div class="element">Relation <b>ServerType (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ServerType : <a href="class139532.html#ref4_139532"><b>DNSCURVE_SERVER_TYPE</b></a></li><li>C++ : public: <a href="class139532.html#ref4_139532"><b>DNSCURVE_SERVER_TYPE</b></a> ServerType</li></ul><a name="ref0_143884"></a>
+<table><tr><td><div class="element">Relation <b>PrecomputationKey (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + PrecomputationKey : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * PrecomputationKey</li></ul><a name="ref0_144012"></a>
+<table><tr><td><div class="element">Relation <b>ReceiveMagicNumber (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ReceiveMagicNumber : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * ReceiveMagicNumber</li></ul><a name="ref0_144140"></a>
+<table><tr><td><div class="element">Relation <b>SendBuffer (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + SendBuffer : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> * SendBuffer</li></ul><a name="ref1_177932"></a>
+<table><tr><td><div class="element">Attribute <b>SendSize</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + SendSize : size_t</li><li>C++ : public: size_t SendSize</li></ul><a name="ref0_144268"></a>
+<table><tr><td><div class="element">Relation <b>RecvBuffer (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + RecvBuffer : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: std::unique_ptr&lt;<a href="class140428.html#ref4_140428"><b>uint8_t</b></a>[]&gt; RecvBuffer</li></ul><p>Stereotype: std::unique_ptr</p>
+<a name="ref1_178060"></a>
+<table><tr><td><div class="element">Attribute <b>RecvLen</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + RecvLen : size_t</li><li>C++ : public: size_t RecvLen</li></ul><a name="ref1_178188"></a>
+<table><tr><td><div class="element">Attribute <b>IsPacketDone</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + IsPacketDone : bool</li><li>C++ : public: bool IsPacketDone</li></ul><a name="ref2_137740"></a>
+<table><tr><td><div class="element">Operation <b>DNSCurveSocketSelectingTable</b></div></td></tr></table><p>Member functions<br /></p><p>Declaration :</p><ul><li>Uml : + DNSCurveSocketSelectingTable(in  : void) : </li><li>C++ : public: DNSCurveSocketSelectingTable(void )</li></ul></div>
+</body>
+</html>

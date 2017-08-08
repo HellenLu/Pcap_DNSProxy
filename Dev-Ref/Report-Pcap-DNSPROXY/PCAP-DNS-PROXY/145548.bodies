@@ -1,0 +1,4 @@
+class AlternateSwapTable
+!!!136076.cpp!!!	AlternateSwapTable(in  : void)
+	memset(this, 0, sizeof(ALTERNATE_SWAP_TABLE));
+	return;

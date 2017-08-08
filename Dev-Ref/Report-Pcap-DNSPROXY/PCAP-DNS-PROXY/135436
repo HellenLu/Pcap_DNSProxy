@@ -1,0 +1,332 @@
+format 213
+"private" // Dependency::LibSodium::private
+  revision 1
+  modified_by 12 "marchon"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/LibSodium/private/"
+  cpp_src_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/LibSodium/private/"
+  classview 135180 "private"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 164108 "fe"
+      visibility package stereotype "typedef" base_type class_ref 163980 // int32_t
+      cpp_decl "${comment}typedef ${type} ${name}[10];
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 169100 // <dependency>
+	relation 169100 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 169100 // <dependency>
+	  b parent class_ref 163980 // int32_t
+      end
+    end
+
+    class 164236 "ge_p2"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 169228 // X (<directional composition>)
+	relation 169228 *-->
+	  a role_name "X" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169228 // X (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 169356 // Y (<directional composition>)
+	relation 169356 *-->
+	  a role_name "Y" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169356 // Y (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 169484 // Z (<directional composition>)
+	relation 169484 *-->
+	  a role_name "Z" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169484 // Z (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+    end
+
+    class 164364 "ge_p3"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 169612 // X (<directional composition>)
+	relation 169612 *-->
+	  a role_name "X" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169612 // X (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 169740 // Y (<directional composition>)
+	relation 169740 *-->
+	  a role_name "Y" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169740 // Y (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 169868 // Z (<directional composition>)
+	relation 169868 *-->
+	  a role_name "Z" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169868 // Z (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 169996 // T (<directional composition>)
+	relation 169996 *-->
+	  a role_name "T" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 169996 // T (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+    end
+
+    class 164492 "ge_p1p1"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 170124 // X (<directional composition>)
+	relation 170124 *-->
+	  a role_name "X" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170124 // X (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 170252 // Y (<directional composition>)
+	relation 170252 *-->
+	  a role_name "Y" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170252 // Y (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 170380 // Z (<directional composition>)
+	relation 170380 *-->
+	  a role_name "Z" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170380 // Z (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 170508 // T (<directional composition>)
+	relation 170508 *-->
+	  a role_name "T" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170508 // T (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+    end
+
+    class 164620 "ge_precomp"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 170636 // yplusx (<directional composition>)
+	relation 170636 *-->
+	  a role_name "yplusx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170636 // yplusx (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 170764 // yminusx (<directional composition>)
+	relation 170764 *-->
+	  a role_name "yminusx" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170764 // yminusx (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 170892 // xy2d (<directional composition>)
+	relation 170892 *-->
+	  a role_name "xy2d" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 170892 // xy2d (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+    end
+
+    class 164748 "ge_cached"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 171020 // YplusX (<directional composition>)
+	relation 171020 *-->
+	  a role_name "YplusX" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171020 // YplusX (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 171148 // YminusX (<directional composition>)
+	relation 171148 *-->
+	  a role_name "YminusX" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171148 // YminusX (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 171276 // Z (<directional composition>)
+	relation 171276 *-->
+	  a role_name "Z" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171276 // Z (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+
+      classrelation 171404 // T2d (<directional composition>)
+	relation 171404 *-->
+	  a role_name "T2d" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 171404 // T2d (<directional composition>)
+	  b parent class_ref 164108 // fe
+      end
+    end
+  end
+
+  deploymentview 134796 "private"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 136460 "curve25519_ref10"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 164108 // fe
+	class_ref 164236 // ge_p2
+	class_ref 164364 // ge_p3
+	class_ref 164492 // ge_p1p1
+	class_ref 164620 // ge_precomp
+	class_ref 164748 // ge_cached
+      end
+    end
+  end
+end

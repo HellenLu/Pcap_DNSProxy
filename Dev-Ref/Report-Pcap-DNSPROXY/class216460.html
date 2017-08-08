@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class X509V3_CONF_METHOD_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class X509V3_CONF_METHOD_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_216460"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct X509V3_CONF_METHOD_st </li></ul><p>Artifact : <a href="index.html#ref8_143884"><b>x509v3</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_214156"></a>
+<table><tr><td><div class="element">Attribute <b>get_string</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + get_string : char *(*) (void *db, const char *section, const char *value)</li><li>C++ : public:  char *(*get_string) (void *db, const char *section, const char *value)</li></ul><a name="ref1_214284"></a>
+<table><tr><td><div class="element">Attribute <b>free_string</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + free_string : void (*) (void *db, char *string)</li><li>C++ : public:  void (*free_string) (void *db, char *string)</li></ul><a name="ref1_214412"></a>
+<table><tr><td><div class="element">Attribute <b>free_section</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + free_section : void (*) (void *db, STACK_OF(CONF_VALUE) *section)</li><li>C++ : public:  void (*free_section) (void *db, STACK_OF(CONF_VALUE) *section)</li></ul></div>
+</body>
+</html>

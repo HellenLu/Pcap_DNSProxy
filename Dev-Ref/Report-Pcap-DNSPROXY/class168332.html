@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ASN1_ADB_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ASN1_ADB_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_168332"></a>
+<p>Declaration :</p><ul>
+<li>C++ : struct ASN1_ADB_st </li></ul><p>Artifact : <a href="index.html#ref8_137484"><b>asn1t</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_186508"></a>
+<table><tr><td><div class="element">Attribute <b>flags</b></div></td></tr></table>
+<p> Various flags <br /></p><p>Declaration :</p><ul><li>Uml : + flags : ulong</li><li>C++ : public: unsigned long flags</li></ul><a name="ref1_186636"></a>
+<table><tr><td><div class="element">Attribute <b>offset</b></div></td></tr></table>
+<p> Offset of selector field <br /></p><p>Declaration :</p><ul><li>Uml : + offset : ulong</li><li>C++ : public: unsigned long offset</li></ul><a name="ref1_186764"></a>
+<table><tr><td><div class="element">Attribute <b>adb_cb</b></div></td></tr></table>
+<p> Application callback <br /></p><p>Declaration :</p><ul><li>Uml : + adb_cb : // Application callback int (*)(long *psel)</li><li>C++ : public:  // Application callback  int (*adb_cb)(long *psel)</li></ul><a name="ref0_173196"></a>
+<table><tr><td><div class="element">Relation <b>tbl (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> Table of possible types <br /></p><p>Declaration :</p><ul><li>Uml : + tbl : <a href="class168204.html#ref4_168204"><b>ASN1_ADB_TABLE</b></a>, read only</li><li>C++ : public: const <a href="class168204.html#ref4_168204"><b>ASN1_ADB_TABLE</b></a> * tbl</li></ul><a name="ref1_186892"></a>
+<table><tr><td><div class="element">Attribute <b>tblcount</b></div></td></tr></table>
+<p> Number of entries in tbl <br /></p><p>Declaration :</p><ul><li>Uml : + tblcount : long</li><li>C++ : public: long tblcount</li></ul><a name="ref1_187020"></a>
+<table><tr><td><div class="element">Attribute <b>default_tt</b></div></td></tr></table>
+<p> Type to use if no match <br /></p><p>Declaration :</p><ul><li>Uml : + default_tt : ASN1_TEMPLATE, read only</li><li>C++ : public: const ASN1_TEMPLATE * default_tt</li></ul><a name="ref1_187148"></a>
+<table><tr><td><div class="element">Attribute <b>null_tt</b></div></td></tr></table>
+<p> Type to use if selector is NULL <br /></p><p>Declaration :</p><ul><li>Uml : + null_tt : ASN1_TEMPLATE, read only</li><li>C++ : public: const ASN1_TEMPLATE * null_tt</li></ul></div>
+</body>
+</html>

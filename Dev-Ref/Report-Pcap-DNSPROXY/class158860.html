@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _socks4_server_command_reply_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _socks4_server_command_reply_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_158860"></a>
+<p>SOCKS version 4 server reply message<br /><br />1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3<br />0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|    Version    |     Reply     |   Reserved    | Address Type  |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />/                         Bind Address                          /<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|           Bind Port           |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _socks4_server_command_reply_ </li></ul><p>Artifact : <a href="index.html#ref8_134796"><b>Structure</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_163084"></a>
+<table><tr><td><div class="element">Relation <b>Version (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Version : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> Version</li></ul><a name="ref0_163212"></a>
+<table><tr><td><div class="element">Relation <b>Command (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Command : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> Command</li></ul><a name="ref0_163340"></a>
+<table><tr><td><div class="element">Relation <b>Remote_Port (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Remote_Port : <a href="class142732.html#ref4_142732"><b>uint16_t</b></a></li><li>C++ : public: <a href="class142732.html#ref4_142732"><b>uint16_t</b></a> Remote_Port</li></ul><a name="ref1_181388"></a>
+<table><tr><td><div class="element">Attribute <b>Remote_Address</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + Remote_Address : in_addr</li><li>C++ : public: in_addr Remote_Address</li></ul></div>
+</body>
+</html>

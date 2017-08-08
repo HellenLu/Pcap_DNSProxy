@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class bpf_insn</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class bpf_insn</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_222860"></a>
+<p>!<br />\brief A single BPF pseudo-instruction.<br /><br />bpf_insn contains a single instruction for the BPF register-machine. It is used to send a filter program to the driver.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct bpf_insn </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_218124"></a>
+<table><tr><td><div class="element">Attribute <b>code</b></div></td></tr></table>
+<p>/< Instruction type and addressing mode.<br /></p><p>Declaration :</p><ul><li>Uml : + code : USHORT</li><li>C++ : public: USHORT code</li></ul><a name="ref1_218252"></a>
+<table><tr><td><div class="element">Attribute <b>jt</b></div></td></tr></table>
+<p>/< Jump if true<br /></p><p>Declaration :</p><ul><li>Uml : + jt : UCHAR</li><li>C++ : public: UCHAR jt</li></ul><a name="ref1_218380"></a>
+<table><tr><td><div class="element">Attribute <b>jf</b></div></td></tr></table>
+<p>/< Jump if false<br /></p><p>Declaration :</p><ul><li>Uml : + jf : UCHAR</li><li>C++ : public: UCHAR jf</li></ul><a name="ref1_218508"></a>
+<table><tr><td><div class="element">Attribute <b>k</b></div></td></tr></table>
+<p>/< Generic field used for various purposes.<br /></p><p>Declaration :</p><ul><li>Uml : + k : int</li><li>C++ : public: int k</li></ul></div>
+</body>
+</html>

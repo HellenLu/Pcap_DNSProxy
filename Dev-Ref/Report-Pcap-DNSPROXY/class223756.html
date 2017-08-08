@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _ADAPTER</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _ADAPTER</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_223756"></a>
+<p>!<br />\brief Describes an opened network adapter.<br /><br />This structure is the most important for the functioning of packet.dll, but the great part of its fields<br />should be ignored by the user, since the library offers functions that avoid to cope with low-level parameters<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _ADAPTER </li></ul><p>Artifact : <a href="index.html#ref8_144268"><b>Packet32</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_220428"></a>
+<table><tr><td><div class="element">Attribute <b>hFile</b></div></td></tr></table>
+<p>/< \internal Handle to an open instance of the NPF driver.<br /></p><p>Declaration :</p><ul><li>Uml : + hFile : HANDLE</li><li>C++ : public: HANDLE hFile</li></ul><a name="ref1_220556"></a>
+<table><tr><td><div class="element">Attribute <b>SymbolicLink</b></div></td></tr></table>
+<p>/< \internal A string containing the name of the network adapter currently opened.<br /></p><p>Declaration :</p><ul><li>Uml : + SymbolicLink : CHAR, multiplicity : [MAX_LINK_NAME_LENGTH]</li><li>C++ : public: CHAR SymbolicLink[MAX_LINK_NAME_LENGTH]</li></ul><a name="ref1_220684"></a>
+<table><tr><td><div class="element">Attribute <b>NumWrites</b></div></td></tr></table>
+<p>/< \internal Number of times a packets written on this adapter will be repeated <br /></p><p>Declaration :</p><ul><li>Uml : + NumWrites : int</li><li>C++ : public: int NumWrites</li></ul><a name="ref1_220812"></a>
+<table><tr><td><div class="element">Attribute <b>ReadEvent</b></div></td></tr></table>
+<p>/< on the wire.<br />/< A notification event associated with the read calls on the adapter.<br /></p><p>Declaration :</p><ul><li>Uml : + ReadEvent : HANDLE</li><li>C++ : public: HANDLE ReadEvent</li></ul><a name="ref1_220940"></a>
+<table><tr><td><div class="element">Attribute <b>ReadTimeOut</b></div></td></tr></table>
+<p>/< It can be passed to standard Win32 functions (like WaitForSingleObject<br />/< or WaitForMultipleObjects) to wait until the driver's buffer contains some <br />/< data. It is particularly useful in GUI applications that need to wait <br />/< concurrently on several events. In Windows NT/2000 the PacketSetMinToCopy()<br />/< function can be used to define the minimum amount of data in the kernel buffer<br />/< that will cause the event to be signalled. <br />/< \internal The amount of time after which a read on the driver will be released and <br /></p><p>Declaration :</p><ul><li>Uml : + ReadTimeOut : UINT</li><li>C++ : public: UINT ReadTimeOut</li></ul><a name="ref1_221068"></a>
+<table><tr><td><div class="element">Attribute <b>Name</b></div></td></tr></table>
+<p>/< ReadEvent will be signaled, also if no packets were captured<br /><br /></p><p>Declaration :</p><ul><li>Uml : + Name : CHAR, multiplicity : [ADAPTER_NAME_LENGTH]</li><li>C++ : public: CHAR Name[ADAPTER_NAME_LENGTH]</li></ul><a name="ref0_192268"></a>
+<table><tr><td><div class="element">Relation <b>pWanAdapter (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + pWanAdapter : <a href="class223628.html#ref4_223628"><b>PWAN_ADAPTER</b></a></li><li>C++ : public: <a href="class223628.html#ref4_223628"><b>PWAN_ADAPTER</b></a> pWanAdapter</li></ul><a name="ref1_221196"></a>
+<table><tr><td><div class="element">Attribute <b>Flags</b></div></td></tr></table>
+<p>/< Adapter's flags. Tell if this adapter must be treated in a different way, using the Netmon API or the dagc API.<br /></p><p>Declaration :</p><ul><li>Uml : + Flags : UINT</li><li>C++ : public: UINT Flags</li></ul><a name="ref0_192396"></a>
+<table><tr><td><div class="element">Relation <b>AirpcapAd (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AirpcapAd : <a href="class222604.html#ref4_222604"><b>PAirpcapHandle</b></a></li><li>C++ : public: <a href="class222604.html#ref4_222604"><b>PAirpcapHandle</b></a> AirpcapAd</li></ul><a name="ref1_221324"></a>
+<table><tr><td><div class="element">Attribute <b>NpfImHandle</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + NpfImHandle : void</li><li>C++ : public: void * NpfImHandle</li></ul><a name="ref1_221452"></a>
+<table><tr><td><div class="element">Attribute <b>pDagCard</b></div></td></tr></table>
+<p>/< Pointer to the dagc API adapter descriptor for this adapter<br /></p><p>Declaration :</p><ul><li>Uml : + pDagCard : dagc_t</li><li>C++ : public: dagc_t * pDagCard</li></ul><a name="ref1_221580"></a>
+<table><tr><td><div class="element">Attribute <b>DagBuffer</b></div></td></tr></table>
+<p>/< Pointer to the buffer with the packets that is received from the DAG card<br /></p><p>Declaration :</p><ul><li>Uml : + DagBuffer : PCHAR</li><li>C++ : public: PCHAR DagBuffer</li></ul><a name="ref1_221708"></a>
+<table><tr><td><div class="element">Attribute <b>DagReadTimeout</b></div></td></tr></table>
+<p>/< Read timeout. The dagc API requires a timeval structure<br /></p><p>Declaration :</p><ul><li>Uml : + DagReadTimeout : timeval</li><li>C++ : public: struct timeval DagReadTimeout</li></ul><a name="ref1_221836"></a>
+<table><tr><td><div class="element">Attribute <b>DagFcsLen</b></div></td></tr></table>
+<p>/< Length of the frame check sequence attached to any packet by the card. Obtained from the registry<br /></p><p>Declaration :</p><ul><li>Uml : + DagFcsLen : uint</li><li>C++ : public: unsigned int DagFcsLen</li></ul><a name="ref1_221964"></a>
+<table><tr><td><div class="element">Attribute <b>DagFastProcess</b></div></td></tr></table>
+<p>/< True if the user requests fast capture processing on this card. Higher level applications can use this value to provide a faster but possibly unprecise capture (for example, libpcap doesn't convert the timestamps).<br /></p><p>Declaration :</p><ul><li>Uml : + DagFastProcess : DWORD</li><li>C++ : public: DWORD DagFastProcess</li></ul></div>
+</body>
+</html>

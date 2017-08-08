@@ -1,0 +1,4 @@
+class AddressRangeTable
+!!!135692.cpp!!!	AddressRangeTable(in  : void)
+	memset(this, 0, sizeof(ADDRESS_RANGE_TABLE));
+	return;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class _ipv6_psd_hdr_</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class _ipv6_psd_hdr_</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_151308"></a>
+<p> Internet Control Message Protocol version 6/ICMPv6, Transmission Control Protocol/TCP and User Datagram Protocol/UDP Pseudo header with IPv4<br /><br />1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3<br />0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                                                               |<br />|                        Source Address                         |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                                                               |<br />|                      Destination Address                      |<br />|                                                               |<br />|                                                               |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                          Data Length                          |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br />|                     Zeros                     |  Next Header  |<br />+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct _ipv6_psd_hdr_ </li></ul><p>Artifact : <a href="index.html#ref8_134796"><b>Structure</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref0_150028"></a>
+<table><tr><td><div class="element">Relation <b>Source (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Source : <a href="class151436.html#ref4_151436"><b>in6_addr</b></a></li><li>C++ : public: <a href="class151436.html#ref4_151436"><b>in6_addr</b></a> Source</li></ul><a name="ref0_150156"></a>
+<table><tr><td><div class="element">Relation <b>Destination (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Destination : <a href="class151436.html#ref4_151436"><b>in6_addr</b></a></li><li>C++ : public: <a href="class151436.html#ref4_151436"><b>in6_addr</b></a> Destination</li></ul><a name="ref0_150284"></a>
+<table><tr><td><div class="element">Relation <b>Length (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Length : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> Length</li></ul><a name="ref0_150412"></a>
+<table><tr><td><div class="element">Relation <b>Zero (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Zero : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a>, multiplicity : [3U]</li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> Zero[3U]</li></ul><a name="ref0_150540"></a>
+<table><tr><td><div class="element">Relation <b>NextHeader (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + NextHeader : <a href="class140428.html#ref4_140428"><b>uint8_t</b></a></li><li>C++ : public: <a href="class140428.html#ref4_140428"><b>uint8_t</b></a> NextHeader</li></ul></div>
+</body>
+</html>

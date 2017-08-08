@@ -1,0 +1,7 @@
+class HostsTable
+!!!135820.cpp!!!	HostsTable(in  : void)
+	PermissionType = HOSTS_TYPE::NONE;
+	IsStringMatching = false;
+	PermissionOperation = false;
+
+	return;

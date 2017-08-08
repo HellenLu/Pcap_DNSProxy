@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ssl_dane_st</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ssl_dane_st</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_165516"></a>
+<p>Per connection DANE state<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct ssl_dane_st </li></ul><p>Artifact : <a href="index.html#ref8_136844"><b>dane</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_184204"></a>
+<table><tr><td><div class="element">Attribute <b>dctx</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + dctx : dane_ctx_st</li><li>C++ : public: struct dane_ctx_st * dctx</li></ul><a name="ref0_172044"></a>
+<table><tr><td><div class="element">Relation <b>mtlsa (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> DANE-TA(2) Cert(0) Full(0) certs <br /> Matching TLSA record <br /></p><p>Declaration :</p><ul><li>Uml : + mtlsa : <a href="class165388.html#ref4_165388"><b>danetls_record</b></a></li><li>C++ : public: <a href="class165388.html#ref4_165388"><b>danetls_record</b></a> * mtlsa</li></ul><a name="ref0_172172"></a>
+<table><tr><td><div class="element">Relation <b>mcert (&lt;unidirectional association&gt;)</b></div></td></tr></table><p> DANE matched cert <br /></p><p>Declaration :</p><ul><li>Uml : + mcert : <a href="class165644.html#ref4_165644"><b>X509</b></a></li><li>C++ : public: <a href="class165644.html#ref4_165644"><b>X509</b></a> * mcert</li></ul><a name="ref0_172300"></a>
+<table><tr><td><div class="element">Relation <b>umask (&lt;directional composition&gt;)</b></div></td></tr></table><p> Usages present <br /></p><p>Declaration :</p><ul><li>Uml : + umask : <a href="class140300.html#ref4_140300"><b>uint32_t</b></a></li><li>C++ : public: <a href="class140300.html#ref4_140300"><b>uint32_t</b></a> umask</li></ul><a name="ref1_184332"></a>
+<table><tr><td><div class="element">Attribute <b>mdpth</b></div></td></tr></table>
+<p> Depth of matched cert <br /></p><p>Declaration :</p><ul><li>Uml : + mdpth : int</li><li>C++ : public: int mdpth</li></ul><a name="ref1_184460"></a>
+<table><tr><td><div class="element">Attribute <b>pdpth</b></div></td></tr></table>
+<p> Depth of PKIX trust <br /></p><p>Declaration :</p><ul><li>Uml : + pdpth : int</li><li>C++ : public: int pdpth</li></ul><a name="ref1_184588"></a>
+<table><tr><td><div class="element">Attribute <b>flags</b></div></td></tr></table>
+<p> feature bitmask <br /></p><p>Declaration :</p><ul><li>Uml : + flags : ulong</li><li>C++ : public: unsigned long flags</li></ul></div>
+</body>
+</html>

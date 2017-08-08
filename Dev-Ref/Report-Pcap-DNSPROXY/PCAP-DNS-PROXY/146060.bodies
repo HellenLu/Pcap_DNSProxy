@@ -1,0 +1,4 @@
+class DiffernetFileSetHosts
+!!!136332.cpp!!!	DiffernetFileSetHosts(in  : void)
+	FileIndex = 0;
+	return;

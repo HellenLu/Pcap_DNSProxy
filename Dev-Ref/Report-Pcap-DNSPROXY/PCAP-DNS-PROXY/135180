@@ -1,0 +1,1584 @@
+format 213
+"pcap" // Dependency::WinPcap::pcap
+  revision 1
+  modified_by 12 "marchon"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/WinPcap/pcap/"
+  cpp_src_dir "/Users/marchon/FIE/Pcap_DNSProxy/Source/Dependency/WinPcap/pcap/"
+  classview 134796 "pcap"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 146700 "pcap_t"
+      visibility package stereotype "typedef" explicit_base_type "pcap"
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 225164 "_pcap_bluetooth_h4_header"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Header prepended libpcap to each bluetooth h:4 frame.
+fields are in network byte order
+"
+      classrelation 192780 // direction (<directional composition>)
+	relation 192780 *-->
+	  a role_name "direction" public
+	    comment " if first bit is set direction is incoming "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 192780 // direction (<directional composition>)
+	  b parent class_ref 222092 // u_int32_t
+      end
+    end
+
+    class 225292 "pcap_bluetooth_h4_header"
+      visibility package stereotype "typedef" base_type class_ref 225164 // _pcap_bluetooth_h4_header
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 217996 // <dependency>
+	relation 217996 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 217996 // <dependency>
+	  b parent class_ref 225164 // _pcap_bluetooth_h4_header
+      end
+    end
+
+    class 225420 "bpf_int32"
+      visibility package stereotype "typedef" explicit_base_type "int"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 225548 "bpf_u_int32"
+      visibility package stereotype "typedef" explicit_base_type "u_int"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 225676 "bpf_version"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Struct return by BIOCVERSION.  This represents the version number of 
+the filter language described by the instruction encodings below.
+bpf understands a program iff kernel_major == filter_major &&
+kernel_minor >= filter_minor, that is, if the value returned by the
+running kernel has the same major number and a minor number equal
+equal to or less than the filter being downloaded.  Otherwise, the
+results are undefined, meaning an error may be returned or packets
+may be accepted haphazardly.
+It has nothing to do with the source code version.
+"
+      attribute 224268 "bv_major"
+	public explicit_type "u_short"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 224396 "bv_minor"
+	public explicit_type "u_short"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 225804 "pcap_etherent"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "As returned by the pcap_next_etherent()
+XXX this stuff doesn't belong in this interface, but this
+library already must do name to address translation, so
+on systems that don't have support for /etc/ethers, we
+export these hooks since they'll
+"
+      attribute 224524 "addr"
+	public explicit_type "u_char"
+	multiplicity "[6]"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 224652 "name"
+	public explicit_type "char"
+	multiplicity "[122]"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 225932 "pcap_dumper_t"
+      visibility package stereotype "typedef" explicit_base_type "pcap_dumper"
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 226060 "pcap_if"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Item in a list of interfaces.
+"
+      classrelation 194060 // next (<unidirectional association>)
+	relation 194060 --->
+	  a role_name "next" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	    classrelation_ref 194060 // next (<unidirectional association>)
+	  b parent class_ref 226060 // pcap_if
+      end
+
+      attribute 229004 "name"
+	public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " name to hand to \"pcap_open_live()\" "
+      end
+
+      attribute 229132 "description"
+	public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " textual description of interface, or NULL "
+      end
+
+      classrelation 194188 // addresses (<unidirectional association>)
+	relation 194188 --->
+	  a role_name "addresses" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	    classrelation_ref 194188 // addresses (<unidirectional association>)
+	  b parent class_ref 226316 // pcap_addr
+      end
+
+      classrelation 194316 // flags (<directional composition>)
+	relation 194316 *-->
+	  a role_name "flags" public
+	    comment " PCAP_IF_ interface flags "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 194316 // flags (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+    end
+
+    class 226188 "pcap_if_t"
+      visibility package stereotype "typedef" base_type class_ref 226060 // pcap_if
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 192908 // <dependency>
+	relation 192908 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 192908 // <dependency>
+	  b parent class_ref 226060 // pcap_if
+      end
+    end
+
+    class 226316 "pcap_addr"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Representation of an interface address.
+"
+      classrelation 194444 // next (<unidirectional association>)
+	relation 194444 --->
+	  a role_name "next" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	    classrelation_ref 194444 // next (<unidirectional association>)
+	  b parent class_ref 226316 // pcap_addr
+      end
+
+      attribute 229260 "addr"
+	public explicit_type "sockaddr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " address "
+      end
+
+      attribute 229388 "netmask"
+	public explicit_type "sockaddr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " netmask for that address "
+      end
+
+      attribute 229516 "broadaddr"
+	public explicit_type "sockaddr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " broadcast address for that address "
+      end
+
+      attribute 229644 "dstaddr"
+	public explicit_type "sockaddr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " P2P destination address for that address "
+      end
+    end
+
+    class 226444 "pcap_addr_t"
+      visibility package stereotype "typedef" base_type class_ref 226316 // pcap_addr
+      cpp_decl "${comment}typedef struct ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 193036 // <dependency>
+	relation 193036 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 193036 // <dependency>
+	  b parent class_ref 226316 // pcap_addr
+      end
+    end
+
+    class 226572 "pcap_file_header"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "The first record in the file contains saved values for some
+of the flags used in the printout phases of tcpdump.
+Many fields here are 32 bit ints so compilers won't insert unwanted
+padding; these files need to be interchangeable across architectures.
+
+Do not change the layout of this structure, in any way (this includes
+changes that only affect the length of fields in this structure).
+
+Also, do not change the interpretation of any of the members of this
+structure, in any way (this includes using values other than
+LINKTYPE_ values, as defined in \"savefile.c\", in the \"linktype\"
+field).
+
+Instead:
+
+	introduce a new structure for the new format, if the layout
+	of the structure changed;
+
+	send mail to \"tcpdump-workers@lists.tcpdump.org\", requesting
+	a new magic number for your new capture file format, and, when
+	you get the new magic number, put it in \"savefile.c\";
+
+	use that magic number for save files with the changed file
+	header;
+
+	make the code in \"savefile.c\" capable of reading files with
+	the old file header as well as files with the new file header
+	(using the magic number to determine the header format).
+
+Then supply the changes as a patch at
+
+	http://sourceforge.net/projects/libpcap/
+
+so that future versions of libpcap and programs that use it (such as
+tcpdump) will be able to read your new capture file format.
+"
+      classrelation 193164 // magic (<directional composition>)
+	relation 193164 *-->
+	  a role_name "magic" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193164 // magic (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+
+      attribute 224780 "version_major"
+	public explicit_type "u_short"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 224908 "version_minor"
+	public explicit_type "u_short"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 193292 // thiszone (<directional composition>)
+	relation 193292 *-->
+	  a role_name "thiszone" public
+	    comment " gmt to local correction "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193292 // thiszone (<directional composition>)
+	  b parent class_ref 225420 // bpf_int32
+      end
+
+      classrelation 193420 // sigfigs (<directional composition>)
+	relation 193420 *-->
+	  a role_name "sigfigs" public
+	    comment " accuracy of timestamps "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193420 // sigfigs (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+
+      classrelation 193548 // snaplen (<directional composition>)
+	relation 193548 *-->
+	  a role_name "snaplen" public
+	    comment " max length saved portion of each pkt "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193548 // snaplen (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+
+      classrelation 193676 // linktype (<directional composition>)
+	relation 193676 *-->
+	  a role_name "linktype" public
+	    comment " data link type (LINKTYPE_*) "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193676 // linktype (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+    end
+
+    class 226700 "pcap_direction_t"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 225036 "PCAP_D_INOUT"
+	public type class_ref 226700 // pcap_direction_t
+	init_value " 0"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 225164 "PCAP_D_IN"
+	public type class_ref 226700 // pcap_direction_t
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 225292 "PCAP_D_OUT"
+	public type class_ref 226700 // pcap_direction_t
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 226828 "pcap_pkthdr"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Generic per-packet information, as supplied by libpcap.
+
+The time stamp can and should be a \"struct timeval\", regardless of
+whether your system supports 32-bit tv_sec in \"struct timeval\",
+64-bit tv_sec in \"struct timeval\", or both if it supports both 32-bit
+and 64-bit applications.  The on-disk format of savefiles uses 32-bit
+tv_sec (and tv_usec); this structure is irrelevant to that.  32-bit
+and 64-bit versions of libpcap, even if they're on the same platform,
+should supply the appropriate version of \"struct timeval\", even if
+that's not what the underlying packet capture mechanism supplies.
+"
+      attribute 225420 "ts"
+	public explicit_type "timeval"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}struct ${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " time stamp "
+      end
+
+      classrelation 193804 // caplen (<directional composition>)
+	relation 193804 *-->
+	  a role_name "caplen" public
+	    comment " length of portion present "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193804 // caplen (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+
+      classrelation 193932 // len (<directional composition>)
+	relation 193932 *-->
+	  a role_name "len" public
+	    comment " length this packet (off wire) "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 193932 // len (<directional composition>)
+	  b parent class_ref 225548 // bpf_u_int32
+      end
+    end
+
+    class 226956 "pcap_stat"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "As returned by the pcap_stats()
+"
+      attribute 225548 "ps_recv"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " number of packets received "
+      end
+
+      attribute 225676 "ps_drop"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " number of packets dropped "
+      end
+
+      attribute 225804 "ps_ifdrop"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " drops by interface XXX not yet supported "
+      end
+
+      attribute 225932 "ps_capt"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " number of packets that are received by the application; please get rid off the Win32 ifdef "
+      end
+
+      attribute 226060 "ps_sent"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " number of packets sent by the server on the network "
+      end
+
+      attribute 226188 "ps_netdrop"
+	public explicit_type "u_int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " number of packets lost on the network "
+      end
+    end
+
+    class 227084 "pcap_stat_ex"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "As returned by the pcap_stats_ex()
+"
+      attribute 226316 "rx_packets"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " total packets received       "
+      end
+
+      attribute 226444 "tx_packets"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " total packets transmitted    "
+      end
+
+      attribute 226572 "rx_bytes"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " total bytes received         "
+      end
+
+      attribute 226700 "tx_bytes"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " total bytes transmitted      "
+      end
+
+      attribute 226828 "rx_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " bad packets received         "
+      end
+
+      attribute 226956 "tx_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " packet transmit problems     "
+      end
+
+      attribute 227084 "rx_dropped"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " no space in Rx buffers       "
+      end
+
+      attribute 227212 "tx_dropped"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " no space available for Tx    "
+      end
+
+      attribute 227340 "multicast"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " multicast packets received   "
+      end
+
+      attribute 227468 "collisions"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 227596 "rx_length_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " detailed rx_errors: 
+"
+      end
+
+      attribute 227724 "rx_over_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " receiver ring buff overflow  "
+      end
+
+      attribute 227852 "rx_crc_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " recv'd pkt with crc error    "
+      end
+
+      attribute 227980 "rx_frame_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " recv'd frame alignment error "
+      end
+
+      attribute 228108 "rx_fifo_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " recv'r fifo overrun          "
+      end
+
+      attribute 228236 "rx_missed_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " recv'r missed packet         "
+      end
+
+      attribute 228364 "tx_aborted_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " detailed tx_errors 
+"
+      end
+
+      attribute 228492 "tx_carrier_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 228620 "tx_fifo_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 228748 "tx_heartbeat_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 228876 "tx_window_errors"
+	public explicit_type "u_long"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 227212 "pcap_handler"
+      visibility package stereotype "typedef" explicit_base_type "void"
+      cpp_decl "${comment}typedef ${type}(*   ${name})(u_char *, const struct pcap_pkthdr *,
+			     const u_char *);
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 227340 "sll_header"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 194572 // sll_pkttype (<directional composition>)
+	relation 194572 *-->
+	  a role_name "sll_pkttype" public
+	    comment " packet type "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 194572 // sll_pkttype (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 194700 // sll_hatype (<directional composition>)
+	relation 194700 *-->
+	  a role_name "sll_hatype" public
+	    comment " link-layer address type "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 194700 // sll_hatype (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 194828 // sll_halen (<directional composition>)
+	relation 194828 *-->
+	  a role_name "sll_halen" public
+	    comment " link-layer address length "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 194828 // sll_halen (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 194956 // sll_addr (<directional composition>)
+	relation 194956 *-->
+	  a role_name "sll_addr" multiplicity "[SLL_ADDRLEN]" public
+	    comment " link-layer address "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	    classrelation_ref 194956 // sll_addr (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 195084 // sll_protocol (<directional composition>)
+	relation 195084 *-->
+	  a role_name "sll_protocol" public
+	    comment " protocol "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195084 // sll_protocol (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+    end
+
+    class 227468 "_usb_setup"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "USB setup header as defined in USB specification.
+Appears at the front of each packet in DLT_USB captures.
+"
+      classrelation 195212 // bmRequestType (<directional composition>)
+	relation 195212 *-->
+	  a role_name "bmRequestType" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195212 // bmRequestType (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 195340 // bRequest (<directional composition>)
+	relation 195340 *-->
+	  a role_name "bRequest" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195340 // bRequest (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 195468 // wValue (<directional composition>)
+	relation 195468 *-->
+	  a role_name "wValue" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195468 // wValue (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 195596 // wIndex (<directional composition>)
+	relation 195596 *-->
+	  a role_name "wIndex" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195596 // wIndex (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 195724 // wLength (<directional composition>)
+	relation 195724 *-->
+	  a role_name "wLength" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195724 // wLength (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+    end
+
+    class 227596 "pcap_usb_setup"
+      visibility package stereotype "typedef" base_type class_ref 227468 // _usb_setup
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 218124 // <dependency>
+	relation 218124 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 218124 // <dependency>
+	  b parent class_ref 227468 // _usb_setup
+      end
+    end
+
+    class 227724 "_usb_header"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Header prepended by linux kernel to each event.
+Appears at the front of each packet in DLT_USB_LINUX captures.
+"
+      classrelation 195852 // id (<directional composition>)
+	relation 195852 *-->
+	  a role_name "id" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195852 // id (<directional composition>)
+	  b parent class_ref 222220 // u_int64_t
+      end
+
+      classrelation 195980 // event_type (<directional composition>)
+	relation 195980 *-->
+	  a role_name "event_type" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 195980 // event_type (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 196108 // transfer_type (<directional composition>)
+	relation 196108 *-->
+	  a role_name "transfer_type" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196108 // transfer_type (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 196236 // endpoint_number (<directional composition>)
+	relation 196236 *-->
+	  a role_name "endpoint_number" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196236 // endpoint_number (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 196364 // device_address (<directional composition>)
+	relation 196364 *-->
+	  a role_name "device_address" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196364 // device_address (<directional composition>)
+	  b parent class_ref 221836 // u_int8_t
+      end
+
+      classrelation 196492 // bus_id (<directional composition>)
+	relation 196492 *-->
+	  a role_name "bus_id" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196492 // bus_id (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      attribute 229772 "setup_flag"
+	public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "if !=0 the urb setup header is not present"
+      end
+
+      attribute 229900 "data_flag"
+	public explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "if !=0 no urb data is present"
+      end
+
+      classrelation 196620 // ts_sec (<directional composition>)
+	relation 196620 *-->
+	  a role_name "ts_sec" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196620 // ts_sec (<directional composition>)
+	  b parent class_ref 178828 // int64_t
+      end
+
+      classrelation 196748 // ts_usec (<directional composition>)
+	relation 196748 *-->
+	  a role_name "ts_usec" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196748 // ts_usec (<directional composition>)
+	  b parent class_ref 163980 // int32_t
+      end
+
+      classrelation 196876 // status (<directional composition>)
+	relation 196876 *-->
+	  a role_name "status" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 196876 // status (<directional composition>)
+	  b parent class_ref 163980 // int32_t
+      end
+
+      classrelation 197004 // urb_len (<directional composition>)
+	relation 197004 *-->
+	  a role_name "urb_len" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 197004 // urb_len (<directional composition>)
+	  b parent class_ref 222092 // u_int32_t
+      end
+
+      classrelation 197132 // data_len (<directional composition>)
+	relation 197132 *-->
+	  a role_name "data_len" public
+	    comment " amount of urb data really present in this event"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 197132 // data_len (<directional composition>)
+	  b parent class_ref 222092 // u_int32_t
+      end
+
+      classrelation 197260 // setup (<directional composition>)
+	relation 197260 *-->
+	  a role_name "setup" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 197260 // setup (<directional composition>)
+	  b parent class_ref 227596 // pcap_usb_setup
+      end
+    end
+
+    class 227852 "pcap_usb_header"
+      visibility package stereotype "typedef" base_type class_ref 227724 // _usb_header
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 218252 // <dependency>
+	relation 218252 -_->
+	  a public
+	    cpp default "#include in source"
+	    classrelation_ref 218252 // <dependency>
+	  b parent class_ref 227724 // _usb_header
+      end
+    end
+
+    class 227980 "vlan_tag"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 197388 // vlan_tpid (<directional composition>)
+	relation 197388 *-->
+	  a role_name "vlan_tpid" public
+	    comment " ETH_P_8021Q "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 197388 // vlan_tpid (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+
+      classrelation 197516 // vlan_tci (<directional composition>)
+	relation 197516 *-->
+	  a role_name "vlan_tci" public
+	    comment " VLAN TCI "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 197516 // vlan_tci (<directional composition>)
+	  b parent class_ref 221964 // u_int16_t
+      end
+    end
+  end
+
+  deploymentview 135308 "pcap"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 144780 "bluetooth"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 225164 // _pcap_bluetooth_h4_header
+	class_ref 225292 // pcap_bluetooth_h4_header
+      end
+    end
+
+    artifact 144908 "bpf"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 225420 // bpf_int32
+	class_ref 225548 // bpf_u_int32
+	class_ref 225676 // bpf_version
+      end
+    end
+
+    artifact 145036 "namedb"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 225804 // pcap_etherent
+      end
+    end
+
+    artifact 145164 "pcap"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 146700 // pcap_t
+	class_ref 225932 // pcap_dumper_t
+	class_ref 226188 // pcap_if_t
+	class_ref 226444 // pcap_addr_t
+	class_ref 226572 // pcap_file_header
+	class_ref 226700 // pcap_direction_t
+	class_ref 226828 // pcap_pkthdr
+	class_ref 226956 // pcap_stat
+	class_ref 227084 // pcap_stat_ex
+	class_ref 226060 // pcap_if
+	class_ref 226316 // pcap_addr
+	class_ref 227212 // pcap_handler
+      end
+    end
+
+    artifact 145292 "sll"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 227340 // sll_header
+      end
+    end
+
+    artifact 145420 "usb"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 227468 // _usb_setup
+	class_ref 227596 // pcap_usb_setup
+	class_ref 227724 // _usb_header
+	class_ref 227852 // pcap_usb_header
+      end
+    end
+
+    artifact 145548 "vlan"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_classes
+	class_ref 227980 // vlan_tag
+      end
+    end
+  end
+end

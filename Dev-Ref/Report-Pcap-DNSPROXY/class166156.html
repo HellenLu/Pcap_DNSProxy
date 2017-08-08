@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DSO_NAME_CONVERTER_FUNC</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DSO_NAME_CONVERTER_FUNC</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_166156"></a>
+<p>The function prototype used for method functions (or caller-provided<br />callbacks) that transform filenames. They are passed a DSO structure<br />pointer (or NULL if they are to be used independently of a DSO object) and<br />a filename to transform. They should either return NULL (if there is an<br />error condition) or a newly allocated string containing the transformed<br />form that the caller will need to free with OPENSSL_free() when done.<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : typedef char*(*  DSO_NAME_CONVERTER_FUNC)(DSO *, const char *); </li></ul><p>Artifact : <a href="index.html#ref8_136972"><b>dso</b></a></p>
+<p>Stereotype: typedef</p>
+</body>
+</html>

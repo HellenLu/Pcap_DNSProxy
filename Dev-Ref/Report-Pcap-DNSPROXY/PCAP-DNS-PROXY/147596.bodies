@@ -1,0 +1,11 @@
+class DNSCurveSocketSelectingTable
+!!!137740.cpp!!!	DNSCurveSocketSelectingTable(in  : void)
+	ServerType = DNSCURVE_SERVER_TYPE::NONE;
+	PrecomputationKey = nullptr;
+	ReceiveMagicNumber = nullptr;
+	SendBuffer = nullptr;
+	SendSize = 0;
+	RecvLen = 0;
+	IsPacketDone = false;
+
+	return;
